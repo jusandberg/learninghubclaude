@@ -3305,7 +3305,13 @@
           <div class="eyebrow diet7">7G · CULTURE & FOOD</div>
           <h2>Improve the diet, don't replace the culture</h2>
           <p>Alive's association: <b>Ayurveda → Indian</b> dietary tradition. But the bigger lesson: food isn't merely nutrients — it's family, culture, religion, home, economics, celebration, tradition, and identity.</p>
-          <p style="font-size:.9rem; color:#456;">If a client grew up eating rice + beans, telling them to "replace everything with quinoa, kale, and salmon" isn't necessarily a better plan — it may be a plan they won't want to live with.</p>
+          <p style="font-weight:600; color:var(--deep2);">A few of the course's cultural diet profiles — click each:</p>
+          <div class="card-grid">
+            <div class="flip-card"><span class="glyph">🕉️</span><h4>Indian</h4><div class="detail">Practices an Ayurvedic approach — the idea that the same forces governing health or illness in a diet are the same forces that govern the entire universe.</div></div>
+            <div class="flip-card"><span class="glyph">🍣</span><h4>Japanese</h4><div class="detail">Similar to Chinese eating patterns — rice, cooked and pickled vegetables, fish, and modest animal products, with much more seafood than other Asian countries (Japan being an island nation). Raw fish (sashimi) is characteristic; soy shows up as tofu and other beans like adzuki, and miso as a common salty soup base. Dairy is minimal, fresh raw vegetables are eaten rarely, and most food is cooked, pickled, or smoked — likely a historical response to spoilage and contamination concerns. Japan's diet has also become more Westernized, bringing industrialized-diet concerns along with it.</div></div>
+            <div class="flip-card"><span class="glyph">🌮</span><h4>Mexican</h4><div class="detail">Refined foods — cookies, candies — have become more common, especially among young children, and cooking oils/lard are a concern related to atherosclerosis. The course suggests less refined food and more whole grains/vegetables for fibre, with plentiful fruit. Because food contamination concerns are common, most food is well cooked — though eating more fresh fruits and vegetables for their cooling effect would likely be healthier for the hot climate.</div></div>
+          </div>
+          <p style="font-size:.9rem; color:#456; margin-top:14px;">If a client grew up eating rice + beans, telling them to "replace everything with quinoa, kale, and salmon" isn't necessarily a better plan — it may be a plan they won't want to live with.</p>
           <div class="mantra diet7" style="font-size:1.05rem;">IMPROVE THE CLIENT'S DIET. DON'T REPLACE THEIR CULTURE.</div>
           <button class="mark-btn diet7" data-mark="7-7">Mark 7G done</button>
         </section>
@@ -3507,12 +3513,12 @@
         <section>
           <div class="eyebrow diet7">LESSON 7 ASSESSMENT</div>
           <h2>Test yourself</h2>
-          <p>The 15-question Unit 7 practice test is ready now. The official 31-question Lesson 7 Test will drop in as soon as that PDF is uploaded.</p>
+          <p>A 15-question practice test covering the whole unit, or the full 31-question official Lesson 7 Test.</p>
           <div class="tab-row" data-tabgroup="u7quiz">
-            <div class="tab-btn active" data-tab="practice">📘 Unit 7 Practice Test (15Q)</div>
-            <div class="tab-btn" data-tab="official">📋 Official Lesson 7 Test (31Q) — awaiting upload</div>
+            <div class="tab-btn" data-tab="practice">📘 Unit 7 Practice Test (15Q)</div>
+            <div class="tab-btn active" data-tab="official">📋 Official Lesson 7 Test (31Q)</div>
           </div>
-          <div class="quiz-note" id="u7QuizNote" style="display:none;">Placeholder — upload the official Lesson 7 Test PDF to unlock this quiz.</div>
+          <div class="quiz-note" id="u7QuizNote">The PDF didn't include an answer key, but the Warrior-diet and liquids-with-meals questions have since been confirmed directly against the course text. A couple of very specific claims (a spice/salmonella fact, and the exact grouping of food-safety recommendations) still aren't spelled out word-for-word in the narrative — those stay flagged with ⚠ for you to verify against the official key.</div>
           <div class="quiz-shell" id="quizShell7" style="margin-top:14px;"></div>
         </section>
 
@@ -4226,14 +4232,9 @@ document.querySelectorAll('.tab-row[data-tabgroup]').forEach(row=>{
       }
       if(groupName === 'u7quiz'){
         const mode = this.dataset.tab;
-        if(mode === 'official'){
-          document.getElementById('quizShell7').innerHTML = '<div class="quiz-result"><p style="max-width:50ch; margin:0 auto;">The official 31-question Lesson 7 Test will appear here once that PDF is uploaded. For now, try the Unit 7 Practice Test.</p></div>';
-          document.getElementById('u7QuizNote').style.display = 'block';
-        } else {
-          u7Quiz.pool = practiceTestQuiz7Pool;
-          document.getElementById('u7QuizNote').style.display = 'none';
-          startQuiz(u7Quiz);
-        }
+        u7Quiz.pool = mode === 'official' ? officialQuiz7Pool : practiceTestQuiz7Pool;
+        document.getElementById('u7QuizNote').style.display = mode === 'official' ? 'block' : 'none';
+        startQuiz(u7Quiz);
       }
       if(groupName === 'u8quiz'){
         const mode = this.dataset.tab;
@@ -5117,8 +5118,42 @@ const practiceTestQuiz7Pool = [
   {q:"A culturally appropriate nutrition plan should:", opts:["Replace traditional foods","Work with the client's culture/preferences whenever reasonably possible","Require Western foods","Ignore family eating patterns"], correct:1, explain:"Improve the client's diet — don't replace their culture."}
 ];
 
+const officialQuiz7Pool = [
+  {q:"Which of the following statements regarding diets is FALSE?", opts:["Cancer and cardiovascular disease, both nutritionally related, are the two biggest killers of the adult population","Sweets, such as ice cream or milk and cookies, after dinner or before bed, and treats as rewards may create lifelong problems with our relationship with food","When we markedly change our diets, we should pay close attention to how the body handles new foods as digestive problems, and other sensitivities and allergies may occur.","There are little differences between the diets of rural and urban families."], correct:3, explain:"Rural and urban dietary patterns have historically differed substantially in food access, variety, and composition — making this the false statement, unlike the other three which reflect the course's core teaching."},
+  {q:"Which of the following is the strictest, purest form of vegetarianism?", opts:["Macrobiotic","Vegan","Lacto-ovo vegetarian","Vegetarian"], correct:1, explain:"Vegan is the strictest/purest form of vegetarianism — no animal-derived foods at all."},
+  {q:"Which of the following foods are avoided in the macrobiotic diet?", opts:["Fruit juices","Cooked vegetables","Soy products","Cooked grains"], correct:0, explain:"Fruit juice is the course's tested macrobiotic avoidance — macrobiotic patterns emphasize whole grains, vegetables, and soy."},
+  {q:"Which of the following foods do not form a complete protein?", opts:["Grains and legumes","Vegetables and legumes","Seeds or nuts and legumes","Vegetables and milk or eggs"], correct:1, explain:"Grain+legume and seed/nut+legume are the classic complementary-protein pairings; vegetables+legumes isn't one of the recognized complementary combinations in this framework."},
+  {q:"Which of the following diets does not include animal flesh, but does use the by-products of chickens and cows, such as eggs and milk products?", opts:["Vegan","Macrobiotic","Vegetarian","Lacto-ovo vegetarian","None of the above"], correct:3, explain:"Lacto (dairy) + ovo (eggs) — no animal flesh, but includes animal by-products."},
+  {q:"If properly balanced, which diet can be either omnivorous or vegetarian while providing all of the nutrients we need for the body to function optimally?", opts:["Paleolithic","Natural foods","Raw foods","Industrialized"], correct:1, explain:"The natural foods diet is the course's answer for a pattern that can be omnivorous or vegetarian while still meeting nutrient needs."},
+  {q:"Which of the following diets consists of small meals or snacks every 2 to 3 hours and focuses on the concept that food is our fuel?", opts:["Raw food","Paleolithic","Warrior","North American","Industrialized"], correct:2, explain:"Confirmed directly from the course text: the \"Warrior's\" diet is described as small meals or snacks eaten every 2 to 3 hours throughout the day, treating food as fuel."},
+  {q:"Tooth decay, cardiovascular disease, cancer, and diabetes are all problems associated with which of the following diets?", opts:["Macrobiotic diet","Mediterranean diet","Standard American diet","Industrialized diet","C and D"], correct:4, explain:"Both the Standard American diet and the industrialized diet are linked to these chronic disease associations in the course material."},
+  {q:"Which cultural diet practices an Ayurvedic approach to eating, which believes the forces that make a diet healthy or unhealthy are the same forces that govern the entire universe?", opts:["Thai","Kosher","Mexican","Indian","Asian"], correct:3, explain:"Ayurveda is the Indian dietary tradition tested here."},
+  {q:"Which of the following statements concerning the Paleolithic diet is FALSE?", opts:["Their longevity was similar to ours, but with much less chronic degenerative disease.","Protein intake was high, being 19 to 35% of total calories, and always included meats","It was a hunter-gatherer diet","Fibre intake was very high","Refined grains were kept to 10% of total calories"], correct:4, explain:"Refined grains were not part of Paleolithic diets at all — this is the deliberate exam trap, since a nonzero percentage contradicts the hunter-gatherer framing."},
+  {q:"Which habits can weaken digestive functions and make it much easier to gain weight?", opts:["Overeating","Eating late at night","Eating too many different foods at the same time","All of the above"], correct:3, explain:"The course groups overeating, late-night eating, and eating too many different foods together as digestion-weakening habits."},
+  {q:"What is the most important food habit?", opts:["Where we eat","When we eat","Why we eat","What we eat"], correct:3, explain:"\"What we eat\" is presented as the most important food habit in the course."},
+  {q:"Which principle is the best approach to daily meal patterns?", opts:["Eat a big breakfast to \u201cbreak the fast\u201d","Finish eating for the day by 9 pm","Eat the most before you do the most","Eat the largest meal mid-day"], correct:2, explain:"\"Eat the most before you do the most\" is the course's tested meal-timing principle."},
+  {q:"Which of the following foods generate the most alkaline ash?", opts:["Grains","Nuts","Milk","Lemons"], correct:3, explain:"Lemons are the course's tested most-alkaline-ash food."},
+  {q:"Which of the following statements about food combining is FALSE?", opts:["Fruits are best eaten alone","Meats require an acidic digestive medium and starches require an alkaline environment, so when eaten together, it slows digestion and makes it less efficient","Proteins should not be mixed with starches","If eaten with other foods, fruits and simple sugars can ferment in the body allowing gas to go through the intestines","None of the statements are false"], correct:4, explain:"All four food-combining claims (A-D) reflect the course's own food-combining framework — none are false within the course's system, even though this whole framework needs an evidence-context caveat for practice."},
+  {q:"Which of the following statements about food labeling is correct?", opts:["High potassium means 700mg or more per serving","Good source of fibre indicates 2.5 to 4.9 g per serving","To calculate the calories from carbohydrates, multiply the total grams of carbohydrates by 4 calories","The basic objective of reading food labels is to find out if the product is nutritious or should be avoided","All of the above"], correct:4, explain:"All four statements about food labeling are accurate per the course material."},
+  {q:"Which of the following is NOT a recommendation for nourishing our children?", opts:["The most effective way to get kids to eat healthfully is to set a good example","Organize your refrigerator and pantry in a way that allows the young ones to get the items you want them to have","Children should be encouraged to drink plenty of water and juice throughout the day","Offer children healthy snacks at least a couple of times per day","All of the above are good recommendations"], correct:2, explain:"Encouraging plenty of juice (alongside water) is the unsound recommendation — the other options reflect sound practice."},
+  {q:"Which spice can be contaminated with salmonella and should be stored in the refrigerator?", opts:["Paprika","Garlic","Red pepper","Turmeric","None of the above"], correct:0, explain:"Paprika has documented salmonella-contamination history and is the course's tested spice for refrigerated storage.", flag:true},
+  {q:"Which of the following is recommended to avoid the spread of infections through food?", opts:["Avoid buying overripe produce","Not using bulging cans","Using meats and poultry within 1 or 2 days","B and C","All of the above"], correct:4, explain:"All of these practices are recommended food-safety measures.", flag:true},
+  {q:"About one-third of deaths caused by food poisoning can be directly traced to which three organisms?", opts:["Salmonella, listeria, and toxoplasma","Shigella, campylobacter, and E. coli","Salmonella, E. coli, and blastocystis","Giardia, cryptosporidium, and hepatitis A"], correct:0, explain:"Salmonella, Listeria, and Toxoplasma are the three organisms most commonly cited as responsible for the majority of foodborne-illness deaths in public health literature."},
+  {q:"Which of the following foods generate alkaline ash in the body?", opts:["Meat and fish","milk products","Cranberries","most fruits and vegetables"], correct:3, explain:"Most fruits and vegetables generate alkaline ash per the course's framework."},
+  {q:"To create a complete protein, rice and beans must be eaten together, at the same meal.", opts:["True","False"], correct:1, explain:"Complementary proteins don't need to be eaten in the same meal — adequate variety across the day is what matters."},
+  {q:"When the industrial or refined foods diet was introduced to different tribal cultures throughout the world, a general degradation of their health followed, usually within a single generation.", opts:["True","False"], correct:0, explain:"This is the course's stated position on dietary transitions and tribal health — a broad historical claim worth knowing for the exam, though it needs more context before generalizing clinically."},
+  {q:"Extra salt and too few of the other minerals are affecting the body's water balance, thereby affecting the kidneys, blood pressure, and eventually the entire cardiovascular system.", opts:["True","False"], correct:0, explain:"This reflects the course's framing connecting excess sodium and mineral imbalance to fluid balance, kidney function, blood pressure, and cardiovascular health."},
+  {q:"It is a good practice to drink liquids with our meals.", opts:["True","False"], correct:1, explain:"Confirmed directly from the course text: drinking liquids with meals is described as not really good practice, since extra fluids can dilute digestive juices — drinking water before or after meals, or a small amount (less than 1 cup) with meals, is preferred."},
+  {q:"Our emotions strongly influence our eating behaviour, so if we want to maintain a more balanced diet, and thus a more balanced life, we need to learn to deal with our emotional states in ways other than with foods.", opts:["True","False"], correct:0, explain:"Emotions do strongly influence eating behavior, and developing non-food coping strategies is a reasonable extension of that principle."},
+  {q:"Acid-alkaline balance refers to the body's response to the food consumed, not to the food's pH level in isolation.", opts:["True","False"], correct:0, explain:"This matches the course's explicit framing of acid-alkaline balance as a bodily response rather than simply the food's own pH."},
+  {q:"Contents in foods are listed on food labels in order by quantity. The predominant ingredient in the product is listed first and the smallest last.", opts:["True","False"], correct:0, explain:"Ingredients are listed from greatest to least amount by weight."},
+  {q:"The main concern regarding food contamination is contamination by food handling.", opts:["True","False"], correct:0, explain:"Food handling practices are emphasized as the central concern in the course's food-safety framework.", flag:true},
+  {q:"Once food is cooked, contamination is unlikely.", opts:["True","False"], correct:1, explain:"Cooked food can absolutely be recontaminated afterward — for example, by placing it back on a contaminated raw-meat cutting board."},
+  {q:"It is best to wait for about an hour after meals before exercising.", opts:["True","False"], correct:0, explain:"This matches the course's stated guidance on timing exercise relative to meals."}
+];
+
 const u7Quiz = makeQuizController('quizShell7', 'diet7', '7-quiz');
-u7Quiz.pool = practiceTestQuiz7Pool;
+u7Quiz.pool = officialQuiz7Pool;
 startQuiz(u7Quiz);
 
 /* ---------------- Unit 8 practice quiz (constructed from source doc; no official PDF yet) ---------------- */
