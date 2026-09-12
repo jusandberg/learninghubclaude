@@ -32,6 +32,10 @@
     --env8Light: #F5EFD9;
     --diet9: #4A5FC1;
     --diet9Light: #E6E9FB;
+    --perf11: #B3261E;
+    --perf11Light: #F8E0DE;
+    --final: #96751A;
+    --finalLight: #F5EED9;
     --ink: #0A1F26;
     --paper: #FBFAF6;
     --line: rgba(7,43,58,0.14);
@@ -136,6 +140,8 @@
   .hero.diet7-hero{background: linear-gradient(180deg, #3D1230 0%, #6B2350 100%);}
   .hero.env8-hero{background: linear-gradient(180deg, #2A2410 0%, #4A3E0F 100%);}
   .hero.diet9-hero{background: linear-gradient(180deg, #12163D 0%, #232B6B 100%);}
+  .hero.perf11-hero{background: linear-gradient(180deg, #3D1512 0%, #6B241E 100%);}
+  .hero.final-hero{background: linear-gradient(180deg, #2E2410 0%, #4D3D14 100%);}
   .hero::before{
     content:"";
     position:absolute; inset:0;
@@ -189,6 +195,16 @@
       radial-gradient(circle at 15% 30%, rgba(230,233,251,0.10) 0, transparent 40%),
       radial-gradient(circle at 85% 70%, rgba(230,233,251,0.08) 0, transparent 45%);
   }
+  .hero.perf11-hero::before{
+    background-image:
+      radial-gradient(circle at 15% 30%, rgba(248,224,222,0.10) 0, transparent 40%),
+      radial-gradient(circle at 85% 70%, rgba(248,224,222,0.08) 0, transparent 45%);
+  }
+  .hero.final-hero::before{
+    background-image:
+      radial-gradient(circle at 15% 30%, rgba(245,238,217,0.10) 0, transparent 40%),
+      radial-gradient(circle at 85% 70%, rgba(245,238,217,0.08) 0, transparent 45%);
+  }
   .hero-inner{position:relative; max-width:860px; margin:0 auto;}
   .kicker{color:var(--aqua); font-size:.8rem; letter-spacing:.02em; margin-bottom:14px;}
   .protein-hero .kicker{color:#F0B79C;}
@@ -200,6 +216,8 @@
   .diet7-hero .kicker{color:#E4A9CE;}
   .env8-hero .kicker{color:#E0D08C;}
   .diet9-hero .kicker{color:#AEB8F0;}
+  .perf11-hero .kicker{color:#F0A99E;}
+  .final-hero .kicker{color:#E3D08F;}
   .hero h1{color:#fff; font-size:2.3rem; max-width:18ch; line-height:1.1;}
   .hero p.lede{color:rgba(239,248,247,0.82); font-size:1.05rem; max-width:56ch;}
   .protein-hero p.lede{color:rgba(243,228,222,0.85);}
@@ -211,6 +229,8 @@
   .diet7-hero p.lede{color:rgba(243,225,238,0.85);}
   .env8-hero p.lede{color:rgba(245,239,217,0.85);}
   .diet9-hero p.lede{color:rgba(230,233,251,0.85);}
+  .perf11-hero p.lede{color:rgba(248,224,222,0.85);}
+  .final-hero p.lede{color:rgba(245,238,217,0.85);}
 
   .progress-shell{margin-top:30px; display:flex; align-items:center; gap:16px;}
   .droplet-gauge{position:relative; width:50px; height:64px; flex:none;}
@@ -225,6 +245,8 @@
   .diet7-hero .gauge-label{color:#E4A9CE;}
   .env8-hero .gauge-label{color:#E0D08C;}
   .diet9-hero .gauge-label{color:#AEB8F0;}
+  .perf11-hero .gauge-label{color:#F0A99E;}
+  .final-hero .gauge-label{color:#E3D08F;}
   .gauge-sub{font-size:.78rem; color:rgba(239,248,247,0.65);}
 
   section{padding:50px 0; border-bottom:1px solid var(--line);}
@@ -239,6 +261,8 @@
   .eyebrow.diet7{color:var(--diet7);}
   .eyebrow.env8{color:var(--env8);}
   .eyebrow.diet9{color:var(--diet9);}
+  .eyebrow.perf11{color:var(--perf11);}
+  .eyebrow.final{color:var(--final);}
   .big-idea{background:var(--foam); border-left:4px solid var(--teal); padding:18px 22px; border-radius:4px; margin:18px 0 22px; font-size:1.02rem;}
   .big-idea.protein{background:var(--proteinLight); border-left-color:var(--protein);}
   .big-idea.vita{background:var(--vitaLight); border-left-color:var(--vita);}
@@ -249,6 +273,8 @@
   .big-idea.diet7{background:var(--diet7Light); border-left-color:var(--diet7);}
   .big-idea.env8{background:var(--env8Light); border-left-color:var(--env8);}
   .big-idea.diet9{background:var(--diet9Light); border-left-color:var(--diet9);}
+  .big-idea.perf11{background:var(--perf11Light); border-left-color:var(--perf11);}
+  .big-idea.final{background:var(--finalLight); border-left-color:var(--final);}
   .big-idea b{color:var(--deep);}
 
   .mark-btn{
@@ -277,6 +303,10 @@
   .mark-btn.env8:hover, .mark-btn.env8.done{background:var(--env8); color:#fff;}
   .mark-btn.diet9{border-color:var(--diet9); color:var(--diet9);}
   .mark-btn.diet9:hover, .mark-btn.diet9.done{background:var(--diet9); color:#fff;}
+  .mark-btn.perf11{border-color:var(--perf11); color:var(--perf11);}
+  .mark-btn.perf11:hover, .mark-btn.perf11.done{background:var(--perf11); color:#fff;}
+  .mark-btn.final{border-color:var(--final); color:var(--final);}
+  .mark-btn.final:hover, .mark-btn.final.done{background:var(--final); color:#fff;}
 
   /* generic card grid (mmr, contam) */
   .card-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:20px 0;}
@@ -312,6 +342,7 @@
   .center-pill.diet7{background:var(--diet7);}
   .center-pill.env8{background:var(--env8);}
   .center-pill.diet9{background:var(--diet9);}
+  .center-pill.perf11{background:var(--perf11);}
   .pin-row{display:flex; flex-wrap:wrap; gap:10px; justify-content:center;}
   .pin{background:#fff; border:1.5px solid var(--teal); color:var(--deep2); padding:8px 16px; border-radius:100px; font-weight:600; font-size:.85rem;}
   .pin.protein{border-color:var(--protein);}
@@ -323,6 +354,7 @@
   .pin.diet7{border-color:var(--diet7);}
   .pin.env8{border-color:var(--env8);}
   .pin.diet9{border-color:var(--diet9);}
+  .pin.perf11{border-color:var(--perf11);}
   .link-row{display:flex; gap:8px; flex-wrap:wrap; justify-content:center;}
   .link-row span{font-size:.8rem; background:var(--foam); padding:6px 12px; border-radius:100px; color:var(--deep2);}
   .link-row span.protein{background:var(--proteinLight);}
@@ -334,6 +366,7 @@
   .link-row span.diet7{background:var(--diet7Light);}
   .link-row span.env8{background:var(--env8Light);}
   .link-row span.diet9{background:var(--diet9Light);}
+  .link-row span.perf11{background:var(--perf11Light);}
 
   .quad-row{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0;}
   .quad-btn{background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px 10px; text-align:center; cursor:pointer;}
@@ -346,6 +379,7 @@
   .quad-btn.diet7 .letter{color:var(--diet7);}
   .quad-btn.env8 .letter{color:var(--env8);}
   .quad-btn.diet9 .letter{color:var(--diet9);}
+  .quad-btn.perf11 .letter{color:var(--perf11);}
   .quad-btn .word{font-size:.8rem; color:#456; margin-top:6px;}
   .quad-btn .detail{font-size:.78rem; color:#456; max-height:0; overflow:hidden; transition:max-height .25s ease;}
   .quad-btn.open .detail{max-height:100px; margin-top:6px;}
@@ -358,6 +392,7 @@
   .quad-btn.diet7.selected{border-color:var(--diet7); background:var(--diet7Light);}
   .quad-btn.env8.selected{border-color:var(--env8); background:var(--env8Light);}
   .quad-btn.diet9.selected{border-color:var(--diet9); background:var(--diet9Light);}
+  .quad-btn.perf11.selected{border-color:var(--perf11); background:var(--perf11Light);}
 
   .mini-check{background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px; margin-top:18px;}
   .mini-check .options{display:flex; flex-direction:column; gap:8px; margin-top:10px;}
@@ -385,6 +420,7 @@
   .toggle-group.diet7 .toggle-btn.active{border-color:var(--diet7); background:var(--diet7);}
   .toggle-group.env8 .toggle-btn.active{border-color:var(--env8); background:var(--env8);}
   .toggle-group.diet9 .toggle-btn.active{border-color:var(--diet9); background:var(--diet9);}
+  .toggle-group.perf11 .toggle-btn.active{border-color:var(--perf11); background:var(--perf11);}
   .toggle-view{background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; margin-top:14px; min-height:100px;}
   .toggle-view .anim{font-size:2.2rem; text-align:center; margin-bottom:10px;}
   template{display:none;}
@@ -402,6 +438,7 @@
   .flow-arrow.diet7{color:var(--diet7);}
   .flow-arrow.env8{color:var(--env8);}
   .flow-arrow.diet9{color:var(--diet9);}
+  .flow-arrow.perf11{color:var(--perf11);}
 
   .steps-list{display:flex; flex-direction:column; gap:10px; margin:20px 0;}
   .step-item{display:flex; align-items:center; gap:14px; background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; cursor:pointer;}
@@ -416,6 +453,7 @@
   .step-item.diet7.active .num{background:var(--diet7);}
   .step-item.env8.active .num{background:var(--env8);}
   .step-item.diet9.active .num{background:var(--diet9);}
+  .step-item.perf11.active .num{background:var(--perf11);}
   .step-item .glyph{font-size:1.3rem;}
 
   .triangle-wrap{display:flex; justify-content:center; margin:26px 0;}
@@ -430,6 +468,7 @@
   .mantra.diet7{color:var(--diet7);}
   .mantra.env8{color:var(--env8);}
   .mantra.diet9{color:var(--diet9);}
+  .mantra.perf11{color:var(--perf11);}
 
   .tab-row{display:flex; gap:8px; margin:20px 0 0; flex-wrap:wrap;}
   .tab-btn{padding:10px 18px; border-radius:100px; border:1px solid var(--line); background:#fff; cursor:pointer; font-weight:600; font-size:.86rem; color:var(--deep2);}
@@ -476,6 +515,8 @@
   .ten-check.env8.checked{background:var(--env8);}
   .ten-check.diet9{border-color:var(--diet9);}
   .ten-check.diet9.checked{background:var(--diet9);}
+  .ten-check.perf11{border-color:var(--perf11);}
+  .ten-check.perf11.checked{background:var(--perf11);}
   .ten-text{font-size:.94rem;}
   .ten-counter{font-size:.85rem; color:var(--teal); font-weight:600; margin-bottom:6px;}
 
@@ -501,6 +542,7 @@
   .flash-front.diet7{background:var(--diet7);}
   .flash-front.env8{background:var(--env8);}
   .flash-front.diet9{background:var(--diet9);}
+  .flash-front.perf11{background:var(--perf11);}
   .flash-back{background:var(--aqua); color:var(--deep); transform:rotateY(180deg); font-weight:600;}
   .flash-back.protein{background:#F0B79C; color:var(--deep);}
   .flash-back.vita{background:#C9AEE8; color:var(--deep);}
@@ -511,6 +553,7 @@
   .flash-back.diet7{background:#E4A9CE; color:var(--deep);}
   .flash-back.env8{background:#E0D08C; color:var(--deep);}
   .flash-back.diet9{background:#AEB8F0; color:var(--deep);}
+  .flash-back.perf11{background:#F0A99E; color:var(--deep);}
 
   .quiz-shell{background:#fff; border:1px solid var(--line); border-radius:14px; padding:26px;}
   .quiz-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;}
@@ -524,6 +567,8 @@
   .quiz-progress-fill.diet7{background:var(--diet7);}
   .quiz-progress-fill.env8{background:var(--env8);}
   .quiz-progress-fill.diet9{background:var(--diet9);}
+  .quiz-progress-fill.perf11{background:var(--perf11);}
+  .quiz-progress-fill.final{background:var(--final);}
   .quiz-score-pill{background:var(--foam); padding:6px 14px; border-radius:100px; font-size:.85rem; font-weight:600; color:var(--deep2);}
   .q-num{color:var(--teal); font-weight:700; font-size:.82rem; margin-bottom:6px;}
   .q-num.protein{color:var(--protein);}
@@ -534,6 +579,8 @@
   .q-num.diet7{color:var(--diet7);}
   .q-num.env8{color:var(--env8);}
   .q-num.diet9{color:var(--diet9);}
+  .q-num.perf11{color:var(--perf11);}
+  .q-num.final{color:var(--final);}
   .q-text{font-size:1.08rem; font-weight:600; color:var(--deep); margin-bottom:16px;}
   .q-opt{display:block; width:100%; text-align:left; background:#fff; border:1.5px solid var(--line); border-radius:10px; padding:13px 16px; margin-bottom:10px; cursor:pointer; font-size:.94rem; font-family:'Work Sans',sans-serif; transition:border-color .15s, background .15s;}
   .q-opt:hover{border-color:var(--teal);}
@@ -553,6 +600,8 @@
   .quiz-btn.primary.diet7{background:var(--diet7);}
   .quiz-btn.primary.env8{background:var(--env8);}
   .quiz-btn.primary.diet9{background:var(--diet9);}
+  .quiz-btn.primary.perf11{background:var(--perf11);}
+  .quiz-btn.primary.final{background:var(--final);}
   .quiz-btn.primary:disabled{background:#ccd7da; cursor:not-allowed;}
   .quiz-btn.ghost{background:transparent; color:var(--deep2); border:1px solid var(--line);}
   .quiz-result{text-align:center; padding:20px 0;}
@@ -3752,12 +3801,12 @@
         <section>
           <div class="eyebrow env8">LESSON 8 ASSESSMENT</div>
           <h2>Test yourself</h2>
-          <p>A 12-question practice test built from this unit's material is ready now. The official 30-question Lesson 8 Test will drop in once that PDF is uploaded.</p>
+          <p>A 12-question practice test covering the whole unit, or the full 30-question official Lesson 8 Test.</p>
           <div class="tab-row" data-tabgroup="u8quiz">
-            <div class="tab-btn active" data-tab="practice">📘 Unit 8 Practice Test (12Q)</div>
-            <div class="tab-btn" data-tab="official">📋 Official Lesson 8 Test (30Q) — awaiting upload</div>
+            <div class="tab-btn" data-tab="practice">📘 Unit 8 Practice Test (12Q)</div>
+            <div class="tab-btn active" data-tab="official">📋 Official Lesson 8 Test (30Q)</div>
           </div>
-          <div class="quiz-note" id="u8QuizNote" style="display:none;">Placeholder — upload the official Lesson 8 Test PDF to unlock this quiz.</div>
+          <div class="quiz-note" id="u8QuizNote">The PDF didn't include an answer key. Most answers are directly confirmed by the course write-up. A handful of specific claims (a household-product identification question, one additive/behavior link, and the exact radiation-dose comparison) aren't spelled out word-for-word in the narrative — those are flagged with ⚠ so you can verify against the official key.</div>
           <div class="quiz-shell" id="quizShell8" style="margin-top:14px;"></div>
         </section>
 
@@ -4011,18 +4060,388 @@
         <section>
           <div class="eyebrow diet9">LESSON 9 ASSESSMENT</div>
           <h2>Test yourself</h2>
-          <p>A 12-question practice test built from this unit's material is ready now. The official 28-question Lesson 9 Test will drop in once that PDF is uploaded.</p>
+          <p>A 12-question practice test covering the whole unit, or the full 28-question official Lesson 9 Test.</p>
           <div class="tab-row" data-tabgroup="u9quiz">
-            <div class="tab-btn active" data-tab="practice">📘 Unit 9 Practice Test (12Q)</div>
-            <div class="tab-btn" data-tab="official">📋 Official Lesson 9 Test (28Q) — awaiting upload</div>
+            <div class="tab-btn" data-tab="practice">📘 Unit 9 Practice Test (12Q)</div>
+            <div class="tab-btn active" data-tab="official">📋 Official Lesson 9 Test (28Q)</div>
           </div>
-          <div class="quiz-note" id="u9QuizNote" style="display:none;">Placeholder — upload the official Lesson 9 Test PDF to unlock this quiz.</div>
+          <div class="quiz-note" id="u9QuizNote">The PDF didn't include an answer key. Most answers are directly confirmed by the course write-up. A handful of specific claims (exact percentage guidelines for whole grains/meat consumption, the acid-alkaline "false statement" pick, and one nut-soaking mechanism claim) aren't spelled out word-for-word in the narrative — those are flagged with ⚠ so you can verify against the official key.</div>
           <div class="quiz-shell" id="quizShell9" style="margin-top:14px;"></div>
         </section>
 
       </div>
       <footer>Unit 9 · Building the Ideal Diet — Natural Health Fundamentals study companion.</footer>
     </div>
+    <!-- ============================================================= -->
+    <!-- UNIT 11 PANEL -->
+    <!-- ============================================================= -->
+    <div class="unit-panel" data-unit-panel="11">
+      <div class="hero perf11-hero">
+        <div class="hero-inner">
+          <div class="kicker">NATURAL HEALTH FUNDAMENTALS · UNIT 11 · TEXTBOOK EDITION</div>
+          <h1>Performance Enhancement Programs</h1>
+          <p class="lede">Anti-aging, anti-stress, immune enhancement, cancer prevention, cardiovascular health, and athletic performance — Haas's model, presented directly. This unit follows the textbook-first approach: no modern evidence-check interruptions, no correcting Haas while you're learning his material.</p>
+          <div class="progress-shell">
+            <div class="droplet-gauge">
+              <svg viewBox="0 0 54 70">
+                <defs><clipPath id="dropClip11"><path d="M27 2 C27 2 6 30 6 46 A21 21 0 0 0 48 46 C48 30 27 2 27 2 Z"/></clipPath></defs>
+                <path d="M27 2 C27 2 6 30 6 46 A21 21 0 0 0 48 46 C48 30 27 2 27 2 Z" fill="none" stroke="#F0A99E" stroke-width="1.5" opacity="0.5"/>
+                <rect id="gaugeFill11" x="0" y="70" width="54" height="70" fill="#F0A99E" clip-path="url(#dropClip11)"/>
+              </svg>
+            </div>
+            <div>
+              <div class="gauge-label" id="gaugeText11">0 / 21 sections complete</div>
+              <div class="gauge-sub">Mark each section done as you go</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+
+        <section id="u11-sec-1" data-u11-section="1">
+          <div class="eyebrow perf11">THE BIG IDEA</div>
+          <h2>Protect → Adapt → Perform</h2>
+          <p>Unit 9 asked how to build the ideal diet. Unit 11 asks: how can nutrition and lifestyle enhance the body's performance and resilience? "Performance" doesn't just mean sports — in Haas's framework it includes aging well, coping with stress, immune function, cardiovascular function, athletic performance, tissue repair, energy, and vitality.</p>
+          <div class="mantra perf11" style="font-size:1.1rem;">PROTECT THE CELL → MANAGE THE STRESS → SUPPORT IMMUNITY → PROTECT THE HEART → FUEL PERFORMANCE</div>
+          <button class="mark-btn perf11" data-mark="11-1">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-2" data-u11-section="2">
+          <div class="eyebrow perf11">11A–11B · THE ANTI-AGING PROGRAM</div>
+          <h2>Two goals, and who it's for</h2>
+          <p>Haas gives his Anti-Aging program two goals: <b>increase longevity</b> by reducing the potential for degenerative disease, and <b>improve vitality and tissue health</b> through nutrition. Aging varies considerably between individuals due to genetics and constitution, but lifestyle, diet, and exercise can influence how it manifests.</p>
+          <p style="font-weight:600; color:var(--deep2);">This program is for more than "elderly people":</p>
+          <div class="center-wrap">
+            <div class="pin-row"><span class="pin perf11">People over 40</span><span class="pin perf11">People under stress</span><span class="pin perf11">People with demanding jobs</span><span class="pin perf11">People exposed to chemicals</span><span class="pin perf11">People eating processed/red/cured meats</span><span class="pin perf11">Smokers and alcohol drinkers</span></div>
+          </div>
+          <button class="mark-btn perf11" data-mark="11-2">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-3" data-u11-section="3">
+          <div class="eyebrow perf11">11C–11D · WHAT AGING AFFECTS + ACCELERATES</div>
+          <h2>Cardiovascular + nervous systems lead the list</h2>
+          <p>Haas identifies the most common aging-related problems as affecting the <b>cardiovascular</b> and <b>nervous</b> systems — atherosclerosis, reduced circulation, reduced oxygen/nutrient delivery, slower nerve conduction, reduced reflexes, memory/learning changes — plus changes in the musculoskeletal, gastrointestinal, genitourinary, endocrine, and immune systems.</p>
+          <p style="font-weight:600; color:var(--deep2); margin-top:16px;">What accelerates aging, per Haas:</p>
+          <div class="center-wrap">
+            <div class="pin-row"><span class="pin perf11">Smoking</span><span class="pin perf11">Excess alcohol</span><span class="pin perf11">Excess dietary fat</span><span class="pin perf11">Chemicals in food</span><span class="pin perf11">Poor/deficient diet</span><span class="pin perf11">Overeating</span><span class="pin perf11">Stress</span><span class="pin perf11">Pollution</span><span class="pin perf11">Inactivity</span></div>
+            <div class="link-row"><span class="perf11">Plus: negativity, extreme emotions, resisting support, ruts, depression, loneliness, anger, grief</span></div>
+          </div>
+          <div class="mantra perf11" style="font-size:1.05rem; margin-top:14px;">SMOKE · DRINK · OVER-EAT · UNDER-MOVE · OVER-STRESS</div>
+          <button class="mark-btn perf11" data-mark="11-3">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-4" data-u11-section="4">
+          <div class="eyebrow perf11">11E · THEORIES OF AGING</div>
+          <h2>Cross-linking and the aging clock</h2>
+          <p>Haas lists several theories: stagnation/toxicity, aging clock, cross-linking of proteins, free radicals, DNA errors, brain changes, autoimmunity, and stress. Click the two most exam-relevant ones:</p>
+          <div class="card-grid two">
+            <div class="flip-card"><span class="glyph">⏰</span><h4>Aging clock theory</h4><div class="detail">Cells have an inherent, preset potential number of divisions. The number of divisions and the time between them contribute to lifespan.</div></div>
+            <div class="flip-card"><span class="glyph">🧶</span><h4>Cross-linking theory</h4><div class="detail">Molecular changes in tissue proteins cause microfibres to be laid down against the normal direction of other tissue fibres. Result: elasticity decreases, stiffness increases, degeneration increases.</div></div>
+          </div>
+          <button class="mark-btn perf11" data-mark="11-4">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-5" data-u11-section="5">
+          <div class="eyebrow perf11">11F–11G · FREE RADICALS + ANTIOXIDANTS</div>
+          <h2>The most accepted aging hypothesis in the book</h2>
+          <p>A free radical is an unstable, reactive molecule with a free electron — it reacts with other molecules and may damage cell membranes, fats, and tissue linings. Haas links free-radical generation to oxygen metabolism, chemicals, smoking, microbes, and unsaturated fats.</p>
+          <div class="flow-strip">
+            <div class="flow-stage"><span class="glyph">🔥</span>Free radical: "I need an electron!"</div>
+            <div class="flow-arrow perf11">↔</div>
+            <div class="flow-stage"><span class="glyph">🛡️</span>Antioxidant: "I'll neutralize you."</div>
+          </div>
+          <p style="font-weight:600; color:var(--deep2); margin-top:16px;">Haas calls antioxidants "free-radical scavengers." Major examples:</p>
+          <div class="center-wrap">
+            <div class="pin-row"><span class="pin perf11">Vitamin E</span><span class="pin perf11">Vitamin C</span><span class="pin perf11">Selenium</span><span class="pin perf11">Beta-carotene</span></div>
+            <div class="link-row"><span class="perf11">Plus the body's own SOD (superoxide dismutase) and glutathione peroxidase (GP)</span></div>
+          </div>
+          <button class="mark-btn perf11" data-mark="11-5">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-6" data-u11-section="6">
+          <div class="eyebrow perf11">11H–11I · THE ANTI-AGING DIET + CoQ10</div>
+          <h2>Eating lightly, and the mitochondrial coenzyme</h2>
+          <div class="steps-list">
+            <div class="step-item perf11"><div class="num">1</div><div>Eat relatively lightly, avoid obesity</div></div>
+            <div class="step-item perf11"><div class="num">2</div><div>Keep fat low (no more than ~25% of calories)</div></div>
+            <div class="step-item perf11"><div class="num">3</div><div>Focus on complex carbohydrates + fibre-rich foods</div></div>
+            <div class="step-item perf11"><div class="num">4</div><div>Moderate protein (~50-70 g/day, much from vegetable sources)</div></div>
+            <div class="step-item perf11"><div class="num">5</div><div>Eat fewer chemicals; moderate salt, sugar, alcohol, nicotine, caffeine</div></div>
+            <div class="step-item perf11"><div class="num">6</div><div>Drink plenty of water; periodic cleansing/detoxification</div></div>
+          </div>
+          <div class="mineral-note">⚙️ <b>CoQ10 (coenzyme Q10/ubiquinone)</b> supports cardiac muscle function and possibly specific immune functions. Memory chain: CoQ10 → mitochondria → ATP/energy → heart.</div>
+          <button class="mark-btn perf11" data-mark="11-6">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-7" data-u11-section="7">
+          <div class="eyebrow perf11">11J–11K · STRESS: NOT ALWAYS BAD, AND THE PHYSIOLOGY</div>
+          <h2>Fight or flight, one chain at a time</h2>
+          <p>Haas defines stress as our reaction to the external environment plus internal thoughts and feelings — fundamentally the body's fight-or-flight response. Some stress is necessary: mild stress can support motivation, activity, and productivity. The problem is stress that becomes too intense, too frequent, or too prolonged.</p>
+          <div class="flow-strip">
+            <div class="flow-stage">Perceived danger</div>
+            <div class="flow-arrow perf11">→</div>
+            <div class="flow-stage">Brain + pituitary</div>
+            <div class="flow-arrow perf11">→</div>
+            <div class="flow-stage">ACTH</div>
+            <div class="flow-arrow perf11">→</div>
+            <div class="flow-stage">Adrenal glands</div>
+            <div class="flow-arrow perf11">→</div>
+            <div class="flow-stage">Epinephrine + norepinephrine + cortisol</div>
+          </div>
+          <p style="font-size:.9rem; color:#456; margin-top:10px;">Result: heart rate ↑, blood pressure ↑, alertness ↑, blood flow toward muscles/brain, blood flow away from the digestive tract, blood glucose ↑, metabolism ↑. Adrenaline specifically stimulates the liver to release more glucose into the blood so cells have energy available.</p>
+          <button class="mark-btn perf11" data-mark="11-7">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-8" data-u11-section="8">
+          <div class="eyebrow perf11">11L–11N · STRESS, DIGESTION + THE SEVEN TYPES</div>
+          <h2>Digestion is hit first</h2>
+          <p>During stress, energy is diverted away from digestion — Haas considers the digestive tract the body area most easily influenced by stress, followed by the neurological system, circulatory system, and muscles.</p>
+          <div class="toggle-group perf11">
+            <div class="toggle-wrap">
+              <div class="toggle-btn active" data-mode="acute">Acute stress</div>
+              <div class="toggle-btn" data-mode="chronic">Chronic stress</div>
+            </div>
+            <div class="toggle-view"><div class="anim">Stomach HCl ↑</div><p style="margin:0; font-size:.92rem;">May contribute to indigestion, heartburn, gastritis, ulcer problems.</p></div>
+            <template class="toggle-content" data-mode="acute"><div class="anim">Stomach HCl ↑</div><p style="margin:0; font-size:.92rem;">May contribute to indigestion, heartburn, gastritis, ulcer problems.</p></template>
+            <template class="toggle-content" data-mode="chronic"><div class="anim">Stomach acid ↓ · Pancreatic function ↓</div><p style="margin:0; font-size:.92rem;">Leading to poorer digestion and assimilation over time.</p></template>
+          </div>
+          <p style="font-weight:600; color:var(--deep2); margin-top:16px;">Haas's seven types of stress:</p>
+          <div class="card-grid">
+            <div class="flip-card"><span class="glyph">🏃</span><h4>Physical</h4><div class="detail">Exercise, hard labour, birth.</div></div>
+            <div class="flip-card"><span class="glyph">🧪</span><h4>Chemical</h4><div class="detail">Pollution, pesticides, cleaning solvents, drugs, alcohol, caffeine, nicotine.</div></div>
+            <div class="flip-card"><span class="glyph">🧠</span><h4>Mental</h4><div class="detail">Responsibility, long hours, perfectionism, anxiety, worry.</div></div>
+            <div class="flip-card"><span class="glyph">❤️</span><h4>Emotional</h4><div class="detail">Anger, fear, frustration, sadness, betrayal, bereavement.</div></div>
+            <div class="flip-card"><span class="glyph">🍽️</span><h4>Nutritional</h4><div class="detail">Deficiencies, protein/fat excess or deficiency, food allergies.</div></div>
+            <div class="flip-card"><span class="glyph">🩹</span><h4>Traumatic</h4><div class="detail">Infection, injury, burns, surgery, extreme temperatures.</div></div>
+            <div class="flip-card"><span class="glyph">🙏</span><h4>Psycho-spiritual</h4><div class="detail">Relationships, finances, career, life goals, happiness.</div></div>
+          </div>
+          <div class="mantra perf11" style="font-size:1.05rem;">STRESS IS NOT JUST THE EVENT — IT IS HOW WE REACT TO IT</div>
+          <button class="mark-btn perf11" data-mark="11-8">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-9" data-u11-section="9">
+          <div class="eyebrow perf11">11O–11P · STRESS DEPLETES NUTRIENTS + ANTI-STRESS NUTRIENTS</div>
+          <h2>A big exam area</h2>
+          <p>Haas lists vitamins A, E, C, and B vitamins, plus minerals zinc, selenium, calcium, magnesium, iron, potassium, sulfur, and molybdenum as depleted by stress. Stressed bodies also use more carbohydrate, protein, fat, and fatty acids.</p>
+          <div class="mineral-note">🔥 Two especially important anti-stress nutrient groups: <b>B vitamins + vitamin C.</b> Within the B vitamins, Haas singles out <b>B5/pantothenic acid</b> as perhaps the most important "anti-stress" B vitamin, connecting B5 + folate + vitamin C with adrenal function. Major mineral roles go to potassium, calcium, and magnesium — magnesium is described as a "tranquilizing mineral" supporting nervous-system balance and heart function.</div>
+          <button class="mark-btn perf11" data-mark="11-9">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-10" data-u11-section="10">
+          <div class="eyebrow perf11">11Q · LIFESTYLE IS PART OF THE PROGRAM</div>
+          <h2>Not a supplement-only approach</h2>
+          <p>Haas recommends: have fun, express feelings, sleep well, relax, exercise, develop supportive relationships, experience love/intimacy, and change unhelpful perceptions and attitudes.</p>
+          <div class="mantra perf11" style="font-size:1.05rem;">RELAX → EAT → REST</div>
+          <p style="font-size:.9rem; color:#456; margin-top:10px;">He suggests small, wholesome meals for highly stressed people, emphasizes water, and says a lighter <b>detoxification-type diet may be useful at times of intense stress.</b></p>
+          <button class="mark-btn perf11" data-mark="11-10">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-11" data-u11-section="11">
+          <div class="eyebrow perf11">11R–11S · IMMUNE PLAYERS: T CELLS & B CELLS</div>
+          <h2>Friend vs. foe</h2>
+          <p>Immunity protects against viruses, bacteria, yeasts/fungi, foreign proteins, and cancer cells. Haas divides it into innate/nonspecific and acquired/specific immunity.</p>
+          <div class="flow-strip">
+            <div class="flow-stage">Physical barriers (skin, mucous membranes, mucus, cilia)</div>
+            <div class="flow-arrow perf11">→</div>
+            <div class="flow-stage">Immune cells (T cells, B cells, NK cells, macrophages, neutrophils)</div>
+            <div class="flow-arrow perf11">→</div>
+            <div class="flow-stage">Chemical defences (antibodies, complement, interferon, lysozymes)</div>
+          </div>
+          <div class="card-grid two" style="margin-top:16px;">
+            <div class="flip-card"><span class="glyph">🎓</span><h4>T cells</h4><div class="detail">Originate in bone marrow, mature in the thymus — which Haas calls the "king" of the immune system. T-helper cells stimulate immune activity; T-suppressor cells slow certain immune functions after a problem has been handled.</div></div>
+            <div class="flip-card"><span class="glyph">🧬</span><h4>B cells</h4><div class="detail">Originate in bone marrow, become antibody-producing cells, and contribute to immune memory.</div></div>
+          </div>
+          <button class="mark-btn perf11" data-mark="11-11">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-12" data-u11-section="12">
+          <div class="eyebrow perf11">11T–11U · THE LYMPHATIC SYSTEM + PHAGOCYTES</div>
+          <h2>A secondary circulatory system with no pump</h2>
+          <p>Haas calls the lymphatic system a <b>secondary circulatory system</b> — it collects foreign cells/proteins and eventually dumps them into the blood for breakdown/elimination. It has <b>no pump</b>, so Haas emphasizes muscle activity and exercise as what actually moves lymph.</p>
+          <div class="mineral-note">🍽️ <b>Phagocytes</b> (phago = eat) are white blood cells that patrol the body, find foreign material, engulf it, and kill/dissolve it. Haas particularly discusses neutrophils and macrophages.</div>
+          <button class="mark-btn perf11" data-mark="11-12">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-13" data-u11-section="13">
+          <div class="eyebrow perf11">11V–11W · IMMUNE SUPPRESSORS & SUPPORTERS</div>
+          <h2>Immunity as a whole-lifestyle function</h2>
+          <p>Suppressors include aging, infection, surgery, radiation, chemotherapy, some drugs, poor sleep, travel, stress, depression/loneliness, overeating, high-fat diet, sugar, malnutrition, nutrient deficiencies, environmental chemicals, alcohol, and nicotine. Nutritionally, Haas particularly highlights <b>low protein, low vitamin A, and low zinc</b>.</p>
+          <p style="font-weight:600; color:var(--deep2); margin-top:16px;">Supporters, per Haas's chart:</p>
+          <div class="center-wrap">
+            <div class="pin-row"><span class="pin perf11">Positive attitudes</span><span class="pin perf11">Love</span><span class="pin perf11">Laughter</span><span class="pin perf11">Relaxation/meditation</span><span class="pin perf11">Exercise/yoga</span><span class="pin perf11">Wholesome foods</span><span class="pin perf11">Adequate protein</span><span class="pin perf11">Low-fat/low-sugar diet</span><span class="pin perf11">Water</span><span class="pin perf11">Fasting</span><span class="pin perf11">Essential fatty acids</span></div>
+            <div class="link-row"><span class="perf11">Plus: zinc, selenium, vitamin C, A/beta-carotene, E, B vitamins, CoQ10, garlic, echinacea, ginseng</span></div>
+          </div>
+          <button class="mark-btn perf11" data-mark="11-13">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-14" data-u11-section="14">
+          <div class="eyebrow perf11">11X · FEVER</div>
+          <h2>A classic exam trap</h2>
+          <p>One tested statement claims: "When fighting an infection, reduce fever as quickly as possible and keep temperature below 100°F." That is <b>not</b> Haas's position in this program — the statement is false.</p>
+          <button class="mark-btn perf11" data-mark="11-14">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-15" data-u11-section="15">
+          <div class="eyebrow perf11">PART 4 · CANCER PREVENTION</div>
+          <h2>Beta-carotene, vitamin C, and protective foods</h2>
+          <p>Recognized risk factors include excess sunlight/radiation, dietary excesses, psychological influences, and undernutrition. The dietary pattern emphasizes reducing obesity and dietary fat while increasing protective whole-food intake.</p>
+          <div class="card-grid two">
+            <div class="flip-card"><span class="glyph">🥕</span><h4>Beta-carotene</h4><div class="detail">Associated with deficiency among many smokers who develop lung cancer, and with protection of mucous-membrane cells. Memory: beta-carotene → barrier/membrane protection.</div></div>
+            <div class="flip-card"><span class="glyph">🍊</span><h4>Vitamin C</h4><div class="detail">Reduces carcinogen production (specifically nitrosamine formation) and strengthens immune cells/cell membranes against viruses and toxic chemicals.</div></div>
+          </div>
+          <div class="mineral-note">🥦 <b>Cruciferous vegetables, onion, and garlic</b> are all included in relation to detoxifying enzymes/carcinogens — "all of the above" is the tested answer. Foods to avoid/reduce: pickled, smoked, and barbecued foods, and excessive protein. <b>Poultry</b> is given as the "do NOT avoid" choice.</div>
+          <button class="mark-btn perf11" data-mark="11-15">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-16" data-u11-section="16">
+          <div class="eyebrow perf11">PART 5 · CARDIOVASCULAR DISEASE PREVENTION</div>
+          <h2>Highly preventable through lifestyle change</h2>
+          <p>The big risk factors: <b>smoking, high cholesterol, high blood pressure</b> — all of the above is the tested answer.</p>
+          <div class="toggle-group perf11">
+            <div class="toggle-wrap">
+              <div class="toggle-btn active" data-mode="hdl">HDL</div>
+              <div class="toggle-btn" data-mode="ldl">LDL</div>
+            </div>
+            <div class="toggle-view"><div class="anim">Blood → Liver</div><p style="margin:0; font-size:.92rem;">Described as protective. Higher HDL = desired direction.</p></div>
+            <template class="toggle-content" data-mode="hdl"><div class="anim">Blood → Liver</div><p style="margin:0; font-size:.92rem;">Described as protective. Higher HDL = desired direction.</p></template>
+            <template class="toggle-content" data-mode="ldl"><div class="anim">Through blood → Cells</div><p style="margin:0; font-size:.92rem;">Lower LDL = desired direction. VLDL keeps cholesterol in circulation.</p></template>
+          </div>
+          <p style="font-size:.9rem; color:#456; margin-top:10px;">The book pays attention to total-cholesterol:HDL and LDL:HDL ratios. A statement claiming "lower HDL while increasing LDL" is <b>false</b> — that's backwards from the desired direction.</p>
+          <div class="mineral-note">🩸 <b>Atherosclerosis:</b> damage → buildup → narrowing. Material accumulates within arterial walls — lipids, smooth muscle cells, fibrin, calcium — potentially beginning with microinjury to the vascular lining, with platelets and white blood cells contributing. Symptoms may not occur until substantial closure; around <b>70-80% closure</b> is more likely to produce angina.</div>
+          <button class="mark-btn perf11" data-mark="11-16">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-17" data-u11-section="17">
+          <div class="eyebrow perf11">PART 6 · ATHLETIC PERFORMANCE</div>
+          <h2>Exercise + nutrition work together</h2>
+          <p>Athletes place additional demands on the body through movement, sweating, tissue stress, energy expenditure, and muscle work — activity up means nutrient/energy need up.</p>
+          <div class="mineral-note">🏃 <b>Aerobic exercise:</b> continuous repetitive movement of large muscle groups for more than 10-15 minutes. Maximum heart-rate formula: <b>220 − age</b>, with a typical training range of <b>70-85% of maximum.</b></div>
+          <button class="mark-btn perf11" data-mark="11-17">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-18" data-u11-section="18">
+          <div class="eyebrow perf11">11AF–11AG · CARBOHYDRATES + THE ATHLETE RATIO</div>
+          <h2>Not just protein</h2>
+          <p>Haas strongly rejects the idea that athletic nutrition should simply mean enormous protein intake. His model: carbohydrates → energy, protein → build/repair, fat → support/lubrication. The athlete diet centers on whole grains, pasta, legumes, potatoes, starchy vegetables, plus adequate protein, fruits, and relatively moderate fat.</p>
+          <div class="mantra perf11" style="font-size:1.1rem;">50–60% CARBOHYDRATE · 15–20% PROTEIN · 25–30% FAT</div>
+          <p style="font-size:.9rem; color:#456; margin-top:10px;">Carbohydrate further breaks down as 10-20% simple, 40-50% complex. Protein maximum is approximately 25%. More than half of dietary fat should be unsaturated.</p>
+          <button class="mark-btn perf11" data-mark="11-18">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-19" data-u11-section="19">
+          <div class="eyebrow perf11">11AH–11AK · SWEAT LOSSES, WATER, CALCIUM/MAGNESIUM + IRON</div>
+          <h2>What exercise costs the body</h2>
+          <div class="mantra perf11" style="font-size:1.05rem;">SWEAT → WATER + ELECTROLYTES + B1</div>
+          <p>Regular sweating particularly increases losses of water, B1, sodium, potassium, chloride, and magnesium. <b>Dehydration</b> is one of Haas's biggest athlete concerns: low fluid intake → tissue perfusion ↓ → oxygen/nutrient delivery ↓ → fatigue → performance ↓. Water should be the primary liquid.</p>
+          <div class="card-grid two" style="margin-top:14px;">
+            <div class="flip-card"><span class="glyph">🦴</span><h4>Calcium + magnesium</h4><div class="detail">The calcium-magnesium cellular exchange supports muscle contraction, muscle relaxation, nerve conduction, bone/cellular strength, and oxygen delivery to muscles.</div></div>
+            <div class="flip-card"><span class="glyph">🩸</span><h4>Iron</h4><div class="detail">Especially important for female athletes — iron → hemoglobin → oxygen transport, plus iron is part of myoglobin in muscle. Iron → oxygen → energy/endurance.</div></div>
+          </div>
+          <button class="mark-btn perf11" data-mark="11-19">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-20" data-u11-section="20">
+          <div class="eyebrow perf11">11AL–11AM · ANTIOXIDANTS FOR ATHLETES + BCAAs</div>
+          <h2>More metabolic activity → more need for protection</h2>
+          <p>Vigorous exercise increases free-radical production, so Haas emphasizes A/beta-carotene, C, E, and selenium for athletes — the same anti-aging antioxidant concept, applied to exercise stress.</p>
+          <div class="mineral-note">💪 <b>BCAAs (branched-chain amino acids): leucine, isoleucine, valine.</b> They make up about one-third of muscle tissue and can be useful for muscle building. Haas recommends taking them together, approximately <b>30-60 minutes before a workout.</b></div>
+          <button class="mark-btn perf11" data-mark="11-20">Mark this section done</button>
+        </section>
+
+        <section id="u11-sec-21" data-u11-section="21">
+          <div class="eyebrow perf11">11AN–11AP + PART 7 · FERTILITY, JOINTS, VEGETARIANISM & ENVIRONMENT</div>
+          <h2>The rest of the chapter</h2>
+          <div class="card-grid">
+            <div class="flip-card"><span class="glyph">🛡️</span><h4>Vitamin E + fertility</h4><div class="detail">Associated with sperm motility; deficiency has been related to male infertility. (Zinc is kept separate — linked to libido, sperm count, and male sexual function.)</div></div>
+            <div class="flip-card"><span class="glyph">🦴</span><h4>Glucosamine</h4><div class="detail">Supports cartilage — has been shown to help joint pain and stiffness because it appears to support/build normal cartilage.</div></div>
+            <div class="flip-card"><span class="glyph">🌱</span><h4>Vegetarianism</h4><div class="detail">If vegetarians eat a balanced diet, deficiencies are rare — but the added claim that "supplementation is not recommended" makes that full statement false in the book's framework. Separately: a primarily vegetarian diet is generally helpful in preventing cancer — true for this program.</div></div>
+            <div class="flip-card"><span class="glyph">☢️</span><h4>Environmental pollution + radiation</h4><div class="detail">Revisits Unit 8's territory through the performance/protection lens — organic food, glutathione, salt-soda baths, miso, and kelp/iodine around radioactive iodine exposure. Note: Haas's own antioxidant discussion says the body's SOD and glutathione peroxidase are rapidly metabolized and not readily absorbed as oral supplements — worth memorizing the exact wording rather than extrapolating.</div></div>
+          </div>
+          <button class="mark-btn perf11" data-mark="11-21">Mark this section done</button>
+        </section>
+
+        <section class="tight">
+          <div class="eyebrow perf11">ABSOLUTE TAKEAWAYS</div>
+          <h2>15 things you absolutely need to remember</h2>
+          <div class="ten-counter" id="tenCounter11">0 / 15 checked off</div>
+          <ul class="ten-list" id="tenList11">
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Anti-aging program: people over 40 + stressed people + poor diets all qualify in Haas's model.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Aging most commonly affects: cardiovascular + nervous systems.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Cross-linking: protein fibres become abnormally linked → stiffness/loss of elasticity.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Free radicals: unstable reactive molecules; antioxidants neutralize them.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">CoQ10: mitochondria/energy + heart + immune association.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Stress pathway: brain/pituitary → ACTH → adrenals → epinephrine/norepinephrine/cortisol.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Adrenaline increases blood glucose.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Stress particularly affects digestion.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Stress depletes: A, C, E, B vitamins + many minerals.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Zinc: low levels linked with impotence, low sperm count, and low sexual interest.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Lymphatic system: removes foreign cells/proteins; no pump → movement matters.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Immune suppression: low protein + low A + low zinc are major nutritional factors.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">CVD risks: smoking + high cholesterol + high blood pressure.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">Athlete ratio: 50-60% carbs / 15-20% protein / 25-30% fat.</div></li>
+            <li class="ten-item"><div class="ten-check perf11">✓</div><div class="ten-text">BCAAs: leucine + isoleucine + valine → together 30-60 min before a workout.</div></li>
+          </ul>
+          <div class="mantra perf11">PROTECT THE CELL → MANAGE THE STRESS → SUPPORT IMMUNITY → PROTECT THE HEART → FUEL PERFORMANCE</div>
+        </section>
+
+        <section class="tight">
+          <div class="eyebrow perf11">REVIEW</div>
+          <h2>Flashcard deck — Performance Enhancement</h2>
+          <p>Tap a card to flip it. Reshuffle whenever you like.</p>
+          <div class="flash-deck" id="flashDeck11"></div>
+          <button class="mark-btn perf11" id="shuffleFlash11">Shuffle deck</button>
+        </section>
+
+        <section>
+          <div class="eyebrow perf11">LESSON 11 ASSESSMENT</div>
+          <h2>Test yourself</h2>
+          <p>A 20-question practice test built from the study guide's question-by-question breakdown is ready now. The official 30-question Lesson 11 Test will drop in as soon as that PDF is uploaded — the practice test isn't verbatim from Alive, so treat it as a study aid rather than a substitute for the real thing.</p>
+          <div class="tab-row" data-tabgroup="u11quiz">
+            <div class="tab-btn active" data-tab="practice">📘 Unit 11 Practice Test (20Q)</div>
+            <div class="tab-btn" data-tab="official">📋 Official Lesson 11 Test (30Q) — awaiting upload</div>
+          </div>
+          <div class="quiz-note" id="u11QuizNote" style="display:none;">Placeholder — upload the official Lesson 11 Test PDF to unlock this quiz.</div>
+          <div class="quiz-shell" id="quizShell11" style="margin-top:14px;"></div>
+        </section>
+
+      </div>
+      <footer>Unit 11 · Performance Enhancement Programs — Natural Health Fundamentals study companion.</footer>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- FINAL EXAM PANEL -->
+    <!-- ============================================================= -->
+    <div class="unit-panel" data-unit-panel="final">
+      <div class="hero final-hero">
+        <div class="hero-inner">
+          <div class="kicker">🏁 CUMULATIVE FINAL EXAM</div>
+          <h1>Put it all together</h1>
+          <p class="lede">A randomly-drawn exam pulling from every official and practice question bank built so far — Water & Carbs through Performance Enhancement. Each attempt draws a fresh 60-question set from the full pool, so no two attempts look identical.</p>
+        </div>
+      </div>
+
+      <div class="wrap">
+
+        <section class="tight">
+          <div class="eyebrow final">WHAT'S COVERED</div>
+          <h2>Currently drawing from Units 1–9 and 11</h2>
+          <div class="big-idea final">This exam pulls from the <b>official</b> Lesson tests for Units 1, 2, 3, 4, 5, 6, 7, 8, and 9, plus the <b>constructed practice test</b> for Unit 11 (no official Lesson 11 PDF yet). Combined, that's a bank of <b id="finalPoolSize">295</b> questions to draw from.</div>
+          <div class="mineral-note">🚧 <b>Not yet included:</b> Unit 10 (never sent), and Units 12–13 (still locked, awaiting content). Once those units are built with real question banks, they'll automatically join this exam's question pool — no separate request needed.</div>
+        </section>
+
+        <section>
+          <div class="eyebrow final">THE EXAM</div>
+          <h2>60 questions, freshly drawn each time</h2>
+          <p>Answer, get instant feedback with an explanation, and see your full results — including which unit each question came from — at the end.</p>
+          <button class="mark-btn final" id="regenFinalExam">🔄 Draw a brand-new random 60-question exam</button>
+          <div class="quiz-shell" id="quizShellFinal" style="margin-top:18px;"></div>
+        </section>
+
+      </div>
+      <footer>Cumulative Final Exam — Natural Health Fundamentals study companion.</footer>
+    </div>
+
 
   </div><!-- /main-area -->
 </div><!-- /app-shell -->
@@ -4041,10 +4460,11 @@ const units = [
   {id:'7', title:'Unit 7 · Diets & Dietary Habits', lessons:['Dietary patterns','Vegetarian/vegan','Macrobiotic','Natural foods diet','Paleo','Standard American diet','Culture + food','Meal timing','Emotions + food','Food combining','Acid-alkaline theory','Reading labels','Feeding children','Food safety','Lesson 7 test']},
   {id:'8', title:'Unit 8 · Environmental Nutrition', lessons:['Food processing','Chemical exposure','Endocrine disruptors','Indoor/household/air','Food additives','Artificial sweeteners','GM foods','Irradiation + radiation','Grounding','Produce + imports','Lesson 8 test']},
   {id:'9', title:'Unit 9 · Building the Ideal Diet', lessons:['New Basic Four','Variety/balance/moderation','Food rotation','Seasonal + local','Acid-alkaline + combining','Individualization','Digestion + absorption','Supplements + food','Nuts/seeds/grains/beans','Meal planning','Constitutional typing','Lesson 9 test']},
+  {id:'11', title:'Unit 11 · Performance Enhancement', lessons:['Big idea','Anti-aging program','What aging affects','Theories of aging','Free radicals + antioxidants','Anti-aging diet + CoQ10','Stress physiology','Stress + digestion + types','Stress-depleted nutrients','Lifestyle + stress','T cells & B cells','Lymphatic system','Immune suppressors/supporters','Fever','Cancer prevention','Cardiovascular prevention','Athletic performance intro','Carbs + athlete ratio','Sweat/water/minerals','Antioxidants + BCAAs','Fertility/joints/vegetarianism','Lesson 11 test']},
 ];
 const midUnit = {id:'mid', title:'🔄 Midpoint Integration', lessons:['Big picture','Food \u2192 energy','Nutrient connection map','Oxygen/bone/brain networks','Gut + food matrix','Where supplements fit','The three traps','Follow one meal','The 20 things','Checkpoint']};
-const unitTotals = {'1':18, '2':11, '3':17, '4':13, '5':13, '6':16, '7':15, '8':11, '9':12, 'mid':10};
-const lockedUnits = [10,11,12,13];
+const unitTotals = {'1':18, '2':11, '3':17, '4':13, '5':13, '6':16, '7':15, '8':11, '9':12, '11':22, 'mid':10};
+const lockedUnits = [10,12,13];
 
 let activeUnit = '1';
 let expandedUnit = '1';
@@ -4083,6 +4503,15 @@ function renderSidebar(){
       list.appendChild(block);
     }
   });
+
+  const finalBlock = document.createElement('div');
+  finalBlock.className = 'unit-block';
+  finalBlock.innerHTML = `
+    <div class="unit-head ${activeUnit==='final' ? 'active':''}" data-unit="final">
+      <div class="u-title"><span class="u-badge">🏁</span>Final Exam</div>
+    </div>
+  `;
+  list.appendChild(finalBlock);
 
   document.querySelectorAll('.unit-head[data-unit]').forEach(head=>{
     head.addEventListener('click', ()=>{
@@ -4128,10 +4557,11 @@ switchUnit('1');
 function updateGauge(unitNum){
   const total = unitTotals[unitNum] || 10;
   const done = [...doneSet].filter(k=>k.startsWith(unitNum+'-')).length;
-  document.getElementById('gaugeText'+unitNum).textContent = `${done} / ${total} sections complete`;
+  const textEl = document.getElementById('gaugeText'+unitNum);
+  if(textEl) textEl.textContent = `${done} / ${total} sections complete`;
   const pct = done/total;
   const rect = document.getElementById('gaugeFill'+unitNum);
-  rect.setAttribute('y', 70 - (pct*70));
+  if(rect) rect.setAttribute('y', 70 - (pct*70));
   renderSidebar();
 }
 
@@ -4145,7 +4575,7 @@ document.querySelectorAll('.mark-btn[data-mark]').forEach(btn=>{
     updateGauge(unitNum);
   });
 });
-updateGauge('1'); updateGauge('2'); updateGauge('3'); updateGauge('4'); updateGauge('5'); updateGauge('6'); updateGauge('7'); updateGauge('8'); updateGauge('9'); updateGauge('mid');
+updateGauge('1'); updateGauge('2'); updateGauge('3'); updateGauge('4'); updateGauge('5'); updateGauge('6'); updateGauge('7'); updateGauge('8'); updateGauge('9'); updateGauge('11'); updateGauge('mid');
 
 /* ============================================================= */
 /* GENERIC INTERACTIVE COMPONENTS (shared across units)           */
@@ -4238,24 +4668,25 @@ document.querySelectorAll('.tab-row[data-tabgroup]').forEach(row=>{
       }
       if(groupName === 'u8quiz'){
         const mode = this.dataset.tab;
-        if(mode === 'official'){
-          document.getElementById('quizShell8').innerHTML = '<div class="quiz-result"><p style="max-width:50ch; margin:0 auto;">The official 30-question Lesson 8 Test will appear here once that PDF is uploaded. For now, try the Unit 8 Practice Test.</p></div>';
-          document.getElementById('u8QuizNote').style.display = 'block';
-        } else {
-          u8Quiz.pool = practiceTestQuiz8Pool;
-          document.getElementById('u8QuizNote').style.display = 'none';
-          startQuiz(u8Quiz);
-        }
+        u8Quiz.pool = mode === 'official' ? officialQuiz8Pool : practiceTestQuiz8Pool;
+        document.getElementById('u8QuizNote').style.display = mode === 'official' ? 'block' : 'none';
+        startQuiz(u8Quiz);
       }
       if(groupName === 'u9quiz'){
         const mode = this.dataset.tab;
+        u9Quiz.pool = mode === 'official' ? officialQuiz9Pool : practiceTestQuiz9Pool;
+        document.getElementById('u9QuizNote').style.display = mode === 'official' ? 'block' : 'none';
+        startQuiz(u9Quiz);
+      }
+      if(groupName === 'u11quiz'){
+        const mode = this.dataset.tab;
         if(mode === 'official'){
-          document.getElementById('quizShell9').innerHTML = '<div class="quiz-result"><p style="max-width:50ch; margin:0 auto;">The official 28-question Lesson 9 Test will appear here once that PDF is uploaded. For now, try the Unit 9 Practice Test.</p></div>';
-          document.getElementById('u9QuizNote').style.display = 'block';
+          document.getElementById('quizShell11').innerHTML = '<div class="quiz-result"><p style="max-width:50ch; margin:0 auto;">The official 30-question Lesson 11 Test will appear here once that PDF is uploaded. For now, try the Unit 11 Practice Test.</p></div>';
+          document.getElementById('u11QuizNote').style.display = 'block';
         } else {
-          u9Quiz.pool = practiceTestQuiz9Pool;
-          document.getElementById('u9QuizNote').style.display = 'none';
-          startQuiz(u9Quiz);
+          u11Quiz.pool = practiceTestQuiz11Pool;
+          document.getElementById('u11QuizNote').style.display = 'none';
+          startQuiz(u11Quiz);
         }
       }
     });
@@ -4296,6 +4727,7 @@ wireChecklist('tenListmid','tenCountermid',20);
 wireChecklist('tenList7','tenCounter7',20);
 wireChecklist('tenList8','tenCounter8',14);
 wireChecklist('tenList9','tenCounter9',17);
+wireChecklist('tenList11','tenCounter11',15);
 
 /* Body-water % reveal (Unit 1) */
 document.getElementById('revealPct1').addEventListener('click', ()=>{
@@ -4635,6 +5067,39 @@ document.getElementById('shuffleFlash9').addEventListener('click', ()=>{
   document.getElementById('flashDeck9').querySelectorAll('.flash-back').forEach(el=>el.classList.add('diet9'));
 });
 
+const flash11Data = [
+  {q:"Haas's two anti-aging program goals?", a:"Increase longevity + improve vitality/tissue health."},
+  {q:"Systems most affected by aging?", a:"Cardiovascular + nervous systems."},
+  {q:"Cross-linking theory in one line?", a:"Abnormally linked protein fibres \u2192 stiffness, loss of elasticity."},
+  {q:"What is a free radical?", a:"An unstable, reactive molecule with a free electron."},
+  {q:"Haas's term for antioxidants?", a:"Free-radical scavengers."},
+  {q:"CoQ10's memory chain?", a:"CoQ10 \u2192 mitochondria \u2192 ATP/energy \u2192 heart."},
+  {q:"Stress physiology chain?", a:"Brain/pituitary \u2192 ACTH \u2192 adrenals \u2192 epinephrine/norepinephrine/cortisol."},
+  {q:"Body area most easily affected by stress?", a:"The digestive tract."},
+  {q:"Most important \"anti-stress\" B vitamin?", a:"B5 / pantothenic acid."},
+  {q:"Haas's \"tranquilizing mineral\"?", a:"Magnesium."},
+  {q:"Where do T cells mature?", a:"The thymus \u2014 Haas's \"king\" of the immune system."},
+  {q:"What do B cells become?", a:"Antibody-producing cells, contributing to immune memory."},
+  {q:"Haas's term for the lymphatic system?", a:"A secondary circulatory system with no pump."},
+  {q:"Three major nutritional immune suppressors Haas highlights?", a:"Low protein, low vitamin A, low zinc."},
+  {q:"Beta-carotene's cancer-prevention anchor?", a:"Barrier/mucous-membrane protection; linked to lung cancer risk in smokers when deficient."},
+  {q:"Vitamin C's cancer-prevention anchor?", a:"Reduces nitrosamine formation, protects cell membranes."},
+  {q:"Three CVD risk factors Haas emphasizes?", a:"Smoking, high cholesterol, high blood pressure."},
+  {q:"HDL vs. LDL direction?", a:"Higher HDL and lower LDL are the desired directions."},
+  {q:"Maximum heart rate formula?", a:"220 \u2212 age."},
+  {q:"Haas's athlete macronutrient ratio?", a:"50\u201360% carbohydrate / 15\u201320% protein / 25\u201330% fat."},
+  {q:"What do BCAAs stand for and when to take them?", a:"Leucine, isoleucine, valine \u2014 together, 30\u201360 minutes before a workout."},
+  {q:"Which mineral is especially important for female athletes?", a:"Iron (hemoglobin + myoglobin \u2192 oxygen transport)."}
+];
+renderFlash('flashDeck11', flash11Data, false);
+document.getElementById('flashDeck11').closest('section').querySelectorAll('.flash-front').forEach(el=>el.classList.add('perf11'));
+document.getElementById('flashDeck11').closest('section').querySelectorAll('.flash-back').forEach(el=>el.classList.add('perf11'));
+document.getElementById('shuffleFlash11').addEventListener('click', ()=>{
+  renderFlash('flashDeck11', flash11Data, false);
+  document.getElementById('flashDeck11').querySelectorAll('.flash-front').forEach(el=>el.classList.add('perf11'));
+  document.getElementById('flashDeck11').querySelectorAll('.flash-back').forEach(el=>el.classList.add('perf11'));
+});
+
 /* ============================================================= */
 /* QUIZ ENGINE (generic, instantiated per unit)                    */
 /* ============================================================= */
@@ -4662,7 +5127,7 @@ function renderQuizQuestion(ctrl){
       <div class="quiz-progress-track"><div class="quiz-progress-fill${ctrl.theme?' '+ctrl.theme:''}" style="width:${pct}%"></div></div>
       <div class="quiz-score-pill">Question ${ctrl.index+1} of ${ctrl.pool.length}</div>
     </div>
-    <div class="q-num${ctrl.theme?' '+ctrl.theme:''}">QUESTION ${ctrl.index+1}${q.flag ? ' · ⚠ verify against official key' : ''}</div>
+    <div class="q-num${ctrl.theme?' '+ctrl.theme:''}">QUESTION ${ctrl.index+1}${q.unit ? ' · Unit '+q.unit : ''}${q.flag ? ' · ⚠ verify against official key' : ''}</div>
     <div class="q-text">${q.q}</div>
     <div id="qOpts-${ctrl.shellId}"></div>
     <div class="q-explain" id="qExplain-${ctrl.shellId}"></div>
@@ -4711,7 +5176,8 @@ function renderQuizResults(ctrl){
   let rows = "";
   ctrl.answers.forEach(a=>{
     const q = ctrl.pool[a.qIdx];
-    rows += `<div class="result-row"><span class="result-icon">${a.correct ? '✅' : '❌'}</span><span>${q.q}${q.flag ? ' <i>(verify vs. official key)</i>' : ''}</span></div>`;
+    const unitTag = q.unit ? `<b>[U${q.unit}]</b> ` : '';
+    rows += `<div class="result-row"><span class="result-icon">${a.correct ? '✅' : '❌'}</span><span>${unitTag}${q.q}${q.flag ? ' <i>(verify vs. official key)</i>' : ''}</span></div>`;
   });
   shell.innerHTML = `
     <div class="quiz-result">
@@ -4722,7 +5188,7 @@ function renderQuizResults(ctrl){
       <button class="quiz-btn primary${ctrl.theme?' '+ctrl.theme:''}" style="margin-top:20px;" id="retakeBtn-${ctrl.shellId}">Retake quiz</button>
     </div>
   `;
-  document.getElementById(`retakeBtn-${ctrl.shellId}`).addEventListener('click', ()=> startQuiz(ctrl));
+  document.getElementById(`retakeBtn-${ctrl.shellId}`).addEventListener('click', ()=> ctrl.onRetake ? ctrl.onRetake() : startQuiz(ctrl));
 }
 
 /* ---------------- Unit 1 quiz data ---------------- */
@@ -5172,8 +5638,41 @@ const practiceTestQuiz8Pool = [
   {q:"Which statement best reflects a balanced view of food additives?", opts:["All additives are equally risky","Each additive has its own profile, dose, and susceptible-population considerations","Additives should never be studied","Natural additives are always safer than synthetic ones"], correct:1, explain:"Additives vary widely — some (like sulfites) matter mainly for susceptible individuals, while others have different considerations entirely."}
 ];
 
+const officialQuiz8Pool = [
+  {q:"Which of the following is NOT a food process that results in loss of nutritive value?", opts:["Milling of grains","Refining","Synthesizing","Artificial processes","All of the above are processes that result in loss of nutritive value"], correct:2, explain:"Synthesizing typically adds compounds rather than removing them — unlike milling, refining, and artificial processing, which all tend to strip nutritive value."},
+  {q:"Many factors influence the dangers of chemicals in our lives. Which of the following is NOT a factor?", opts:["Repeated exposure to small amounts of chemicals","Interaction of various chemicals","Repeated exposure to the same or similar chemicals found in different products or areas","Our individual immune system capacity","All of the above are factors"], correct:4, explain:"All four listed items are genuine factors influencing chemical risk — repeated exposure, chemical interactions, cumulative exposure across products, and individual susceptibility."},
+  {q:"Which type of chemical lengthens the estrogen cycle, prolonging the body's exposure to estrogen and significantly increasing the possibility of cancer?", opts:["Nerve toxins","Reproductive toxins","Endocrine disrupters","Carcinogens"], correct:2, explain:"Endocrine disrupters are the course's tested chemical category for this estrogen-cycle effect."},
+  {q:"Which of the following is a source of indoor pollution?", opts:["Carpets","Synthetic drapes","Gas heaters","A and B","All of the above"], correct:4, explain:"Carpets, synthetic drapes, and gas heaters are all named indoor pollution sources."},
+  {q:"Which indoor pollutant can carry toxic materials, such as mites, molds, bacteria, asbestos, lead, and carbon monoxide?", opts:["Paints","Dust","Smoke","Heating systems"], correct:1, explain:"Dust is the course's tested carrier of these toxic materials indoors."},
+  {q:"Which product commonly used in the home contains ethanol, ammonia, and perchloroethylene, and can disrupt activity in our nervous and endocrine systems?", opts:["Furniture polish","Dishwasher detergent","Carpet shampoo and upholstery cleaner","Dry cleaning spot remover"], correct:3, explain:"Dry cleaning spot remover is the course's tested product containing this specific chemical combination."},
+  {q:"What type of plastic is commonly found in adhesives, containers, beach balls, pacifiers, raincoats, and boots that can release vinyl chloride and cause cancer, liver disease, and birth defects?", opts:["Plasticizers","Polyvinyl chloride","Polyurethane foam","Fluorocarbon plastic"], correct:1, explain:"Polyvinyl chloride (PVC) is the plastic associated with vinyl chloride release and these health concerns."},
+  {q:"Which of the following are symptoms of chemical toxicity?", opts:["Headache, skin rashes, wheezing, and depression","Fatigue, nausea, loss of sex drive, and confusion","Behaviour changes, mood swings, and coughing","A and C","All of the above"], correct:4, explain:"All three symptom groupings are listed as chemical toxicity symptoms in the course material."},
+  {q:"Which of the following products may contain hydrogen peroxide, ammonia, formaldehyde, and artificial colour, and can damage our nervous and immune systems and disrupt our liver metabolism?", opts:["Nail polish remover","Air freshener","Toothpaste","Mouthwash"], correct:3, explain:"Mouthwash is the course's tested product for this specific chemical combination.", flag:true},
+  {q:"Formaldehyde, methane, ozone, propane, cadmium, and carbon monoxide are all examples of:", opts:["Common air pollutants","Common water pollutants","Common home pesticides","Common home cleaning supplies"], correct:0, explain:"These are all named as common air pollutants."},
+  {q:"Which of the following additives to avoid can cause headaches, nausea, diarrhea, irritated membranes, and allergic reactions, particularly in people with asthma?", opts:["Nitrites","Artificial colors","Sulfites","MSG"], correct:2, explain:"Sulfites are specifically tied to these reactions, particularly in people with asthma."},
+  {q:"Which of the following additives can cause hyperactivity and behavioural changes in children and has also been shown in research studies to cause cancer?", opts:["Preservatives","Nitrites","Sugar","Refined flour"], correct:1, explain:"Nitrites are the course's tested additive for this combined behavioural and cancer-risk association.", flag:true},
+  {q:"Which of the following are relatively safe additives?", opts:["Lecithin, olestra, and vanillin","Annatto, casein, and sacchrin","Gelatin, pectin, and annatto","Sorbitol, minerals, and aspartame"], correct:2, explain:"Gelatin, pectin, and annatto are grouped as the course's relatively safe additives."},
+  {q:"Which antioxidant food additive can be irritating to the liver and kidneys, and is commonly found in prepackaged foods, such as enriched rice, breakfast cereals, dog and cat foods, chewing gum, and cake mixes?", opts:["Carob","Bromines","BHA","BHT"], correct:3, explain:"BHT is the course's tested antioxidant additive for this specific list of foods and organ concerns.", flag:true},
+  {q:"Which food additive is derived from seaweed and is used as a natural stabilizer in foods such as ice cream, cheese spread, chocolate milk, and puddings?", opts:["Cornstarch","Carrageenan","DES","Calcium proprionate"], correct:1, explain:"Carrageenan is the seaweed-derived stabilizer used in these foods."},
+  {q:"Which of the following food additives is found in jams, jellies, baked goods, and sugar substitutes and is also widely used in the cosmetics industry?", opts:["Paraben","Palmitic acid","Polysorbate","Silicate"], correct:0, explain:"Paraben is used across both these food categories and cosmetics."},
+  {q:"Which additive that helps flavour foods and can reduce bacterial contamination has been found to contain polycyclic aromatic hydrocarbons (PAHs), all of which are classified as carcinogens?", opts:["Sodium nitrate","Smoke flavoring","Sulfites","Soy sauce"], correct:1, explain:"Smoke flavoring is the course's tested additive connected to PAHs."},
+  {q:"Which of the following statements about food irradiation is FALSE?", opts:["Food is irradiated using electromagnetic radiation in the range of 10^19 to 10^22 Hz","Radiation therapy has been shown to deplete B vitamins and fat soluble vitamins, such as A and E","Doses of radiation used for food are similar to that used for an average chest X-ray","Food irradiation has been shown to alter cell structures and intracellular activities","Spices, wheat, potatoes, and meat products are some examples of the foods the FDA has approved for food irradiation"], correct:2, explain:"Food irradiation doses are vastly higher than an average chest X-ray dose — this comparison dramatically understates the actual radiation dose used, making it the false statement.", flag:true},
+  {q:"Which of following statements regarding electromagnetic radiation is correct?", opts:["EMR can be a danger to our health","EMR can be divided into two categories: ionizing and nonionizing radiation","EMR can rip electrons from atoms and molecules and directly affect cell division and cell structure","EMR can affect the pineal gland, which produces serotonin and melatonin","All of the above"], correct:4, explain:"All four statements about electromagnetic radiation are accurate per the course material."},
+  {q:"Which food additive is commonly used in food processing, restaurants, and home cooking, and can cause some people to experience headaches, tingling, numbness, and chest pains?", opts:["Neotame","MSG","HVP","DES"], correct:1, explain:"MSG is the course's tested additive for these specific symptoms."},
+  {q:"MSG and aspartame are termed excitotoxins and fall under the nerve toxins category. Even if they do not cause nervous system damage, their chemical effect can overstimulate mental activity.", opts:["True","False"], correct:0, explain:"This matches the course's stated \"excitotoxin\" framing for MSG and aspartame."},
+  {q:"Some estimates suggest that pollution is 5 to 10 times more damaging indoors than it is outdoors.", opts:["True","False"], correct:0, explain:"This is the course's stated indoor-vs-outdoor pollution comparison."},
+  {q:"Many imported foods, particularly tropical fruits, are sprayed or fumigated to keep bugs away during shipping.", opts:["True","False"], correct:0, explain:"This matches the course's stated concern about imported produce treatment during shipping."},
+  {q:"The artificial sweetener sucralose is a good recommendation for a sugar substitute.", opts:["True","False"], correct:1, explain:"The course does not recommend sucralose as a good sugar substitute."},
+  {q:"Even though sulfites may not be cancer-causing themselves, they may enhance the cancer-causing potential of other substances, and many people seem to react to sulfites, especially those sprayed on foods or added in restaurants.", opts:["True","False"], correct:0, explain:"This matches the course's stated position on sulfites and cancer-potentiating effects."},
+  {q:"Consumers can avoid genetically modified foods by choosing to buy organic.", opts:["True","False"], correct:0, explain:"This matches the course's stated position that organic purchasing helps avoid GM foods."},
+  {q:"A good recommendation is to avoid GM foods.", opts:["True","False"], correct:0, explain:"This matches the course's stated recommendation to avoid GM foods."},
+  {q:"Non-ionizing radiation includes X-rays, gamma rays, and nuclear radiation. Exposing the body to these ions at certain levels can dramatically affect the atomic structure.", opts:["True","False"], correct:1, explain:"X-rays, gamma rays, and nuclear radiation are actually ionizing radiation, not non-ionizing — making this statement false."},
+  {q:"A way to balance electromagnetism and electropollution is to put our bare feet on the earth (grass or dirt) and stand for a few minutes to help ground ourselves and clear body electricity.", opts:["True","False"], correct:0, explain:"This matches the course's stated \"grounding\" recommendation."},
+  {q:"Waxes applied to produce protect the food and are safe to consume.", opts:["True","False"], correct:0, explain:"This matches the course's stated position that approved produce waxes are safe to consume.", flag:true}
+];
+
 const u8Quiz = makeQuizController('quizShell8', 'env8', '8-quiz');
-u8Quiz.pool = practiceTestQuiz8Pool;
+u8Quiz.pool = officialQuiz8Pool;
 startQuiz(u8Quiz);
 
 /* ---------------- Unit 9 practice quiz (constructed from source doc; no official PDF yet) ---------------- */
@@ -5192,9 +5691,97 @@ const practiceTestQuiz9Pool = [
   {q:"What is the central lesson of Unit 9?", opts:["There is one universal ideal diet everyone should follow","There is no single ideal diet — the goal is a nutritionally adequate pattern a person can sustain","Supplements are always necessary","Local and seasonal eating is required for health"], correct:1, explain:"The best diet is a nutritionally adequate pattern personalized to the individual, not a diet with the \"best name.\""}
 ];
 
+const officialQuiz9Pool = [
+  {q:"The New Basic Four Food Group is made up of:", opts:["Fruits, vegetables, whole grains and legumes, and proteins and fats/oils","Meats, dairy, grains, and fruits and vegetables","Fruits, vegetables, cereal grains, protein, and fats","Vegetables, fruits, whole grains, and protein"], correct:0, explain:"This exact four-part grouping is the course's tested \"New Basic Four.\""},
+  {q:"Which of the following is NOT one of the 10 key components of a healthy diet?", opts:["Natural foods","Balance","Food combining","Moderation","Low fat"], correct:4, explain:"\"Low fat\" is a specific numeric directive rather than one of the broad guiding principles (natural, balanced, moderate, well-combined, etc.) that make up the course's 10 key components.", flag:true},
+  {q:"Which of the seasons is best for cleansing, fasting, and reevaluation of our health program?", opts:["Spring","Summer","Fall","Winter"], correct:0, explain:"Spring is the course's tested season for cleansing, fasting, and reevaluation."},
+  {q:"Which of the following best describes the most important component of a healthy diet?", opts:["Fruits, nuts, seeds, vegetables, whole grains, and legumes should constitute half of the diet","Eating foods available and grown locally","Eating a variety of foods to obtain a variety of nutrients","Eating a balanced diet and consuming moderate amounts of foods, without regular overeating"], correct:2, explain:"Variety — eating a range of foods to obtain a range of nutrients — is emphasized as the most important component throughout the course."},
+  {q:"Which of the following statements regarding seasonal eating is FALSE?", opts:["Summer is a time that succulent fruits and vegetables are available and is a good time to shift away from cooked foods, while also reducing heavier cooked fats and protein","Autumn has an abundance of root vegetables and squash. The diet shifts to more cooked foods, whole grains, and richer protein and fat foods.","Winter consists of more complex carbohydrates found in whole grains, and an addition of some dairy and poultry, and is a good time to consume high mineral seaweeds","Spring is when the greens grow freely and fresh fruit and vegetables become more available","None of the statements are false"], correct:4, explain:"All four seasonal descriptions match the course's own seasonal-eating framework — none of them are false."},
+  {q:"Why are variety and food rotation important practices?", opts:["Eating a variety of foods provides a variety of nutrients thus preventing any marked deficiencies","Rotating reduces the potential to become allergic or sensitive, which can result from repeatedly stimulating the body's immune and cellular systems with the same nutritional biochemistry","Eating a variety of foods each day helps to avoid overstressing the digestive system","A and B only","All of the above"], correct:4, explain:"All three reasons — nutrient variety, reduced allergy/sensitivity potential, and avoiding digestive overstress — are given as reasons for variety and rotation."},
+  {q:"Which nonessential amino acid, considered to be the least likely needed in terms of diet, may require supplementation to help the body detoxify the food additive sodium benzoate and aspirin?", opts:["Glycine","Cystine","Alanine","Glutamine"], correct:0, explain:"Glycine is used in liver conjugation reactions that detoxify benzoate (forming hippuric acid) and is the course's tested amino acid for this role."},
+  {q:"Which of the following statements concerning acid-alkaline balance is FALSE?", opts:["When foods are combusted, they are broken down into an alkaline or acid ash","A diet that is too acidic affects blood and tissues and the body will try to clear unwanted elements through enhanced elimination","Congestion of mucus in different body areas may often be caused in part by an acid-alkaline imbalance","In very cold climates, a higher percentage of richer acid-forming foods may be tolerated as these foods are higher in fats and burn hotter as body fuel.","Some examples of acidic foods include eggs, cheeses, wheat, refined flour, honey, and meat"], correct:3, explain:"This specific cold-climate/fat-burning claim doesn't hold up as well as the other statements, which are directly and repeatedly confirmed elsewhere in the course material.", flag:true},
+  {q:"Which of the following is described as: Natural, seasonal, rotational, balanced, moderate, and well-combined?", opts:["Constitutional typing","The indigenous diet","The ideal diet","New dietary guidelines"], correct:2, explain:"This six-word description is the course's definition of \"the ideal diet.\""},
+  {q:"What are some ways individuals can determine their own dietary needs?", opts:["Listen to the body","Listen to nature","Be aware of own state of health","A and B","All of the above"], correct:4, explain:"Listening to the body, listening to nature, and being aware of one's own health state are all given as ways to determine individual dietary needs."},
+  {q:"Even with an ideal diet, it is hard to maintain an entire balance of nutrients. Our utilization of the nutrients depends on which of the following factors?", opts:["Healthy digestion and absorption","Stress levels","Extra needs","B and C","All of the above"], correct:4, explain:"Digestion/absorption, stress levels, and extra individual needs all affect nutrient utilization."},
+  {q:"Which of the following statements regarding healthy eating is FALSE?", opts:["Indigestion, gas, bloating, and abdominal discomfort can all result from improper food combinations","After too large of a meal, much more blood than usual is sent to the digestive organs, and we are often sedated and unable to move well until digestion is complete many hours later","Common foods that may generate allergies include cows' milk, wheat, eggs, soybeans, corn, beef, coffee, chocolate, tomatoes, yeast, and shellfish","None of the responses are FALSE"], correct:3, explain:"All three statements reflect the course's own teaching — none of them are false."},
+  {q:"Which of the following are benefits of eating seasonally?", opts:["It is economical","It gives us the cleanest foods, as fewer chemicals are needed to store or ship them","It provides the right type of fuel to protect us from the current climate","B and C","All of the above"], correct:4, explain:"Economy, cleanliness (fewer chemicals for storage/shipping), and climate-appropriate fuel are all listed as benefits of seasonal eating."},
+  {q:"Which of the following are the general guidelines for consumption of whole grains by lacto-ovo vegetarians?", opts:["10 to 15%","20 to 25%","25 to 35%","None of the above"], correct:2, explain:"25 to 35% is the course's tested whole-grain guideline for lacto-ovo vegetarians.", flag:true},
+  {q:"Which of the following are the general guidelines for consumption of meat, poultry, and fish by omnivores?", opts:["5 to 10%","10 to 15%","15 to 20%","20 to 25%"], correct:1, explain:"10 to 15% is the course's tested meat/poultry/fish guideline for omnivores.", flag:true},
+  {q:"Which season is the best season to reevaluate health programs or create new ones?", opts:["Summer","Autumn","Winter","Spring"], correct:3, explain:"Spring is again the tested answer for reevaluating or creating new health programs."},
+  {q:"Which of the following beans do not require soaking overnight?", opts:["Lentils, split peas, and adzuki beans","Lentils, split peas, and kidney beans","Lentils, black beans, and navy beans","All of the above"], correct:0, explain:"Lentils, split peas, and adzuki beans are the course's no-overnight-soak grouping."},
+  {q:"Eating seasonally – eating foods that are available and grown locally – keeps us attuned to Earth, its elements and the cycles of Nature.", opts:["True","False"], correct:0, explain:"This matches the course's philosophical framing of seasonal/local eating."},
+  {q:"When following food combining, it is ok to consume more than one type of protein at the same meal as long as the proteins are not eaten with starches.", opts:["True","False"], correct:0, explain:"Under the food-combining framework, multiple proteins together is acceptable — the restriction is specifically about mixing protein with starch.", flag:true},
+  {q:"With the diminishing nutrients in the soil and the high amount of food processing, it is not easy to obtain all of our nutrients from food.", opts:["True","False"], correct:0, explain:"This matches the course's stated concern about soil depletion and food processing making complete nutrient intake harder."},
+  {q:"Human blood has a normal pH of 8.", opts:["True","False"], correct:1, explain:"Normal arterial blood pH is tightly regulated around 7.35-7.45, not 8."},
+  {q:"Many multinutrient formulas will throw in a few herbs, but typically the levels of herbs used are not enough to be in the naturally therapeutic range.", opts:["True","False"], correct:0, explain:"This matches the course's caution about under-dosed herbs in multinutrient formulas."},
+  {q:"Soaking nuts and seeds overnight helps the body digest the fats because the fats in them become more available as fatty acids.", opts:["True","False"], correct:1, explain:"Soaking primarily reduces phytic acid and enzyme inhibitors and improves mineral availability — it doesn't meaningfully convert fats into free fatty acids, making this specific mechanism claim false.", flag:true},
+  {q:"Fresh herbs are best kept in a glass of water in the refrigerator.", opts:["True","False"], correct:0, explain:"This matches the course's stated fresh-herb storage recommendation."},
+  {q:"Planning meals in advance and then searching out appropriate foods is the best way to eat", opts:["True","False"], correct:1, explain:"This runs counter to the course's seasonal/local eating philosophy, which favors letting what's available guide meal planning rather than the reverse.", flag:true},
+  {q:"Quinoa, amaranth, and millet require a more careful washing than other grains, and it is recommended to wash these grains several times prior to cooking.", opts:["True","False"], correct:0, explain:"This matches the course's stated grain-washing recommendation for these three grains."},
+  {q:"The concept of constitutional typing goes back more than 5,000 years to the subcontinent of India with the tradition of ayurveda.", opts:["True","False"], correct:0, explain:"This matches the course's stated origin of constitutional typing in Ayurveda."},
+  {q:"Nuts and seeds are best stored at room temperature in an air-tight container.", opts:["True","False"], correct:1, explain:"Nuts and seeds contain unsaturated fats susceptible to oxidation — cooler storage (fridge/freezer) preserves them longer than room-temperature storage."}
+];
+
 const u9Quiz = makeQuizController('quizShell9', 'diet9', '9-quiz');
-u9Quiz.pool = practiceTestQuiz9Pool;
+u9Quiz.pool = officialQuiz9Pool;
 startQuiz(u9Quiz);
+
+/* ---------------- Unit 11 practice quiz (constructed from the study guide's Q-by-Q breakdown; no official PDF yet) ---------------- */
+const practiceTestQuiz11Pool = [
+  {q:"Which groups does Haas say can use the Anti-Aging program?", opts:["Only people over 65","People over 40, people under stress, and people eating processed/red/cured meats","Only professional athletes","Only people with diagnosed disease"], correct:1, explain:"Haas's Anti-Aging program applies broadly: people over 40, under stress, in demanding jobs, exposed to chemicals, eating processed/red/cured meats, and smokers/drinkers."},
+  {q:"Which two systems does Haas identify as most commonly affected by aging?", opts:["Respiratory + integumentary","Cardiovascular + nervous","Digestive + renal","Skeletal + lymphatic"], correct:1, explain:"Cardiovascular and nervous systems are Haas's most commonly affected systems, including atherosclerosis and slowed nerve conduction."},
+  {q:"Which theory describes molecular changes causing microfibres to be laid down against the normal direction of tissue fibres, reducing elasticity?", opts:["Aging clock theory","Free radical theory","Cross-linking theory","Autoimmunity theory"], correct:2, explain:"Cross-linking theory describes this exact mechanism — elasticity down, stiffness up, degeneration up."},
+  {q:"What is a free radical?", opts:["A vitamin cofactor","An unstable, reactive molecule with a free electron","A type of hormone","A digestive enzyme"], correct:1, explain:"Free radicals are unstable, reactive molecules with a free electron that can damage cell membranes, fats, and tissue linings."},
+  {q:"Which supplement is critical for mitochondrial energy production and may enhance immune function?", opts:["Biotin","CoQ10","Folate","Chromium"], correct:1, explain:"CoQ10 (ubiquinone) supports mitochondrial energy production and cardiac muscle function, and may support certain immune functions."},
+  {q:"What is the first step in Haas's stress response chain?", opts:["Adrenal glands release cortisol directly","Perceived danger triggers the brain and pituitary, which releases ACTH","The liver releases glucose independently","The thymus signals the adrenals"], correct:1, explain:"The chain begins with perceived danger, which triggers the brain/pituitary to release ACTH, which then signals the adrenal glands."},
+  {q:"Which nutrients does Haas say are depleted by stress?", opts:["Only vitamin C","Only B vitamins","Vitamins A, C, E, B vitamins, and multiple minerals","Only calcium"], correct:2, explain:"Haas lists a wide range of depleted nutrients under stress, including vitamins A, E, C, B vitamins, and minerals like zinc, selenium, calcium, magnesium, iron, potassium, sulfur, and molybdenum."},
+  {q:"Which B vitamin does Haas single out as perhaps the most important \"anti-stress\" vitamin?", opts:["B1 (thiamin)","B5 (pantothenic acid)","B7 (biotin)","B9 (folate)"], correct:1, explain:"B5/pantothenic acid is Haas's key anti-stress B vitamin, connected with adrenal function alongside folate and vitamin C."},
+  {q:"According to Haas, is a lighter detoxification-type diet useful during times of intense stress?", opts:["True", "False"], correct:0, explain:"Haas suggests a lighter, detox-type diet may be useful at times of intense stress, alongside small wholesome meals and adequate water."},
+  {q:"Which gland does Haas call the \"king\" of the immune system?", opts:["Thyroid","Thymus","Pancreas","Adrenal"], correct:1, explain:"T cells mature in the thymus, which Haas calls the \"king\" of the immune system."},
+  {q:"What does Haas call the lymphatic system?", opts:["The primary circulatory system","A secondary circulatory system with no pump","An extension of the digestive tract","A subset of the nervous system"], correct:1, explain:"The lymphatic system is described as a secondary circulatory system with no pump of its own — muscle activity and exercise move lymph instead."},
+  {q:"Which three nutritional factors does Haas particularly highlight as related to immune suppression?", opts:["High protein, high vitamin A, high zinc","Low protein, low vitamin A, low zinc","Low fat, low fiber, low sodium","High calcium, high iron, high B12"], correct:1, explain:"Low protein, low vitamin A, and low zinc are Haas's particularly highlighted nutritional factors in immune suppression."},
+  {q:"According to Haas's framework, should you rapidly reduce a fever and keep temperature below 100\u00b0F when fighting infection?", opts:["True", "False"], correct:1, explain:"This is false in Haas's framework — rapidly suppressing fever below 100\u00b0F is not presented as his position."},
+  {q:"Which nutrient is associated with protecting mucous-membrane cells and is often deficient in smokers who develop lung cancer?", opts:["Vitamin C","Beta-carotene","Vitamin K","Zinc"], correct:1, explain:"Beta-carotene is linked to mucous-membrane/epithelial protection and lung cancer risk in Haas's cancer-prevention framework."},
+  {q:"Which nutrient reduces carcinogen (nitrosamine) production and strengthens cell membranes against viruses and toxic chemicals?", opts:["Vitamin C","Vitamin D","Selenium","Biotin"], correct:0, explain:"Vitamin C (ascorbic acid) is specifically connected to reducing nitrosamine formation and protecting cell membranes."},
+  {q:"Which three risk factors does Haas emphasize for cardiovascular disease?", opts:["Smoking, high cholesterol, high blood pressure","Low protein, low fiber, low water intake","High potassium, low sodium, high fiber","Low cholesterol, low blood pressure, high exercise"], correct:0, explain:"Smoking, high cholesterol, and high blood pressure are Haas's three emphasized CVD risk factors."},
+  {q:"Which statement about cholesterol transport is FALSE in Haas's model?", opts:["HDL carries cholesterol from blood to the liver and is protective","LDL carries cholesterol through the blood to cells","Lower HDL while increasing LDL is a desirable pattern","Total cholesterol:HDL and LDL:HDL ratios matter"], correct:2, explain:"This is backwards — higher HDL and lower LDL are the desired directions, not lower HDL with higher LDL."},
+  {q:"What is Haas's tested macronutrient ratio for athletes?", opts:["50-60% protein / 15-20% carbohydrate / 25-30% fat","50-60% carbohydrate / 15-20% protein / 25-30% fat","70-80% carbohydrate / 10% protein / 10-20% fat","33% each of carbohydrate, protein, and fat"], correct:1, explain:"Haas's tested athlete ratio is 50-60% carbohydrate, 15-20% protein, and 25-30% fat."},
+  {q:"Which three amino acids make up the BCAAs, and when does Haas recommend taking them?", opts:["Lysine, methionine, threonine; after a workout","Leucine, isoleucine, valine; together 30-60 minutes before a workout","Glutamine, arginine, alanine; with breakfast","Tryptophan, tyrosine, phenylalanine; before bed"], correct:1, explain:"Leucine, isoleucine, and valine are the BCAAs, recommended together 30-60 minutes before a workout in Haas's program."},
+  {q:"Which mineral is especially emphasized for female athletes due to its role in oxygen transport?", opts:["Calcium","Iron","Sodium","Chromium"], correct:1, explain:"Iron is especially important for female athletes because of its role in hemoglobin and myoglobin, supporting oxygen transport and endurance."}
+];
+
+const u11Quiz = makeQuizController('quizShell11', 'perf11', '11-quiz');
+u11Quiz.pool = practiceTestQuiz11Pool;
+startQuiz(u11Quiz);
+
+/* ============================================================= */
+/* FINAL EXAM — combines every official/practice pool built so far */
+/* ============================================================= */
+function tagUnit(pool, unitLabel){ return pool.map(q => ({...q, unit: unitLabel})); }
+
+const finalExamPoolAll = [
+  ...tagUnit(officialQuiz1Pool, '1'),
+  ...tagUnit(officialQuiz2Pool, '2'),
+  ...tagUnit(officialQuiz3Pool, '3'),
+  ...tagUnit(officialQuiz4Pool, '4'),
+  ...tagUnit(officialQuiz5Pool, '5'),
+  ...tagUnit(officialQuiz6Pool, '6'),
+  ...tagUnit(officialQuiz7Pool, '7'),
+  ...tagUnit(officialQuiz8Pool, '8'),
+  ...tagUnit(officialQuiz9Pool, '9'),
+  ...tagUnit(practiceTestQuiz11Pool, '11')
+];
+document.getElementById('finalPoolSize').textContent = finalExamPoolAll.length;
+
+const finalQuiz = makeQuizController('quizShellFinal', 'final', 'final-quiz');
+finalQuiz.onRetake = buildFinalExam;
+
+function buildFinalExam(){
+  finalQuiz.pool = shuffle(finalExamPoolAll).slice(0, 60);
+  startQuiz(finalQuiz);
+}
+buildFinalExam();
+document.getElementById('regenFinalExam').addEventListener('click', buildFinalExam);
 </script>
 </body>
 </html>
