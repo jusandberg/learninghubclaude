@@ -36,6 +36,10 @@
     --perf11Light: #F8E0DE;
     --final: #96751A;
     --finalLight: #F5EED9;
+    --cond12: #2E7D6B;
+    --cond12Light: #E1F0EC;
+    --detox13: #5B3F8C;
+    --detox13Light: #ECE4F5;
     --ink: #0A1F26;
     --paper: #FBFAF6;
     --line: rgba(7,43,58,0.14);
@@ -142,6 +146,8 @@
   .hero.diet9-hero{background: linear-gradient(180deg, #12163D 0%, #232B6B 100%);}
   .hero.perf11-hero{background: linear-gradient(180deg, #3D1512 0%, #6B241E 100%);}
   .hero.final-hero{background: linear-gradient(180deg, #2E2410 0%, #4D3D14 100%);}
+  .hero.cond12-hero{background: linear-gradient(180deg, #0F332B 0%, #1D5546 100%);}
+  .hero.detox13-hero{background: linear-gradient(180deg, #241A38 0%, #3E2C60 100%);}
   .hero::before{
     content:"";
     position:absolute; inset:0;
@@ -205,6 +211,16 @@
       radial-gradient(circle at 15% 30%, rgba(245,238,217,0.10) 0, transparent 40%),
       radial-gradient(circle at 85% 70%, rgba(245,238,217,0.08) 0, transparent 45%);
   }
+  .hero.cond12-hero::before{
+    background-image:
+      radial-gradient(circle at 15% 30%, rgba(225,240,236,0.10) 0, transparent 40%),
+      radial-gradient(circle at 85% 70%, rgba(225,240,236,0.08) 0, transparent 45%);
+  }
+  .hero.detox13-hero::before{
+    background-image:
+      radial-gradient(circle at 15% 30%, rgba(236,228,245,0.10) 0, transparent 40%),
+      radial-gradient(circle at 85% 70%, rgba(236,228,245,0.08) 0, transparent 45%);
+  }
   .hero-inner{position:relative; max-width:860px; margin:0 auto;}
   .kicker{color:var(--aqua); font-size:.8rem; letter-spacing:.02em; margin-bottom:14px;}
   .protein-hero .kicker{color:#F0B79C;}
@@ -218,6 +234,8 @@
   .diet9-hero .kicker{color:#AEB8F0;}
   .perf11-hero .kicker{color:#F0A99E;}
   .final-hero .kicker{color:#E3D08F;}
+  .cond12-hero .kicker{color:#8FD9C4;}
+  .detox13-hero .kicker{color:#C7ADE8;}
   .hero h1{color:#fff; font-size:2.3rem; max-width:18ch; line-height:1.1;}
   .hero p.lede{color:rgba(239,248,247,0.82); font-size:1.05rem; max-width:56ch;}
   .protein-hero p.lede{color:rgba(243,228,222,0.85);}
@@ -231,6 +249,8 @@
   .diet9-hero p.lede{color:rgba(230,233,251,0.85);}
   .perf11-hero p.lede{color:rgba(248,224,222,0.85);}
   .final-hero p.lede{color:rgba(245,238,217,0.85);}
+  .cond12-hero p.lede{color:rgba(225,240,236,0.85);}
+  .detox13-hero p.lede{color:rgba(236,228,245,0.85);}
 
   .progress-shell{margin-top:30px; display:flex; align-items:center; gap:16px;}
   .droplet-gauge{position:relative; width:50px; height:64px; flex:none;}
@@ -247,6 +267,8 @@
   .diet9-hero .gauge-label{color:#AEB8F0;}
   .perf11-hero .gauge-label{color:#F0A99E;}
   .final-hero .gauge-label{color:#E3D08F;}
+  .cond12-hero .gauge-label{color:#8FD9C4;}
+  .detox13-hero .gauge-label{color:#C7ADE8;}
   .gauge-sub{font-size:.78rem; color:rgba(239,248,247,0.65);}
 
   section{padding:50px 0; border-bottom:1px solid var(--line);}
@@ -263,6 +285,8 @@
   .eyebrow.diet9{color:var(--diet9);}
   .eyebrow.perf11{color:var(--perf11);}
   .eyebrow.final{color:var(--final);}
+  .eyebrow.cond12{color:var(--cond12);}
+  .eyebrow.detox13{color:var(--detox13);}
   .big-idea{background:var(--foam); border-left:4px solid var(--teal); padding:18px 22px; border-radius:4px; margin:18px 0 22px; font-size:1.02rem;}
   .big-idea.protein{background:var(--proteinLight); border-left-color:var(--protein);}
   .big-idea.vita{background:var(--vitaLight); border-left-color:var(--vita);}
@@ -275,6 +299,8 @@
   .big-idea.diet9{background:var(--diet9Light); border-left-color:var(--diet9);}
   .big-idea.perf11{background:var(--perf11Light); border-left-color:var(--perf11);}
   .big-idea.final{background:var(--finalLight); border-left-color:var(--final);}
+  .big-idea.cond12{background:var(--cond12Light); border-left-color:var(--cond12);}
+  .big-idea.detox13{background:var(--detox13Light); border-left-color:var(--detox13);}
   .big-idea b{color:var(--deep);}
 
   .mark-btn{
@@ -307,6 +333,10 @@
   .mark-btn.perf11:hover, .mark-btn.perf11.done{background:var(--perf11); color:#fff;}
   .mark-btn.final{border-color:var(--final); color:var(--final);}
   .mark-btn.final:hover, .mark-btn.final.done{background:var(--final); color:#fff;}
+  .mark-btn.cond12{border-color:var(--cond12); color:var(--cond12);}
+  .mark-btn.cond12:hover, .mark-btn.cond12.done{background:var(--cond12); color:#fff;}
+  .mark-btn.detox13{border-color:var(--detox13); color:var(--detox13);}
+  .mark-btn.detox13:hover, .mark-btn.detox13.done{background:var(--detox13); color:#fff;}
 
   /* generic card grid (mmr, contam) */
   .card-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:20px 0;}
@@ -342,6 +372,8 @@
   .center-pill.diet7{background:var(--diet7);}
   .center-pill.env8{background:var(--env8);}
   .center-pill.diet9{background:var(--diet9);}
+  .center-pill.cond12{background:var(--cond12);}
+  .center-pill.detox13{background:var(--detox13);}
   .center-pill.perf11{background:var(--perf11);}
   .pin-row{display:flex; flex-wrap:wrap; gap:10px; justify-content:center;}
   .pin{background:#fff; border:1.5px solid var(--teal); color:var(--deep2); padding:8px 16px; border-radius:100px; font-weight:600; font-size:.85rem;}
@@ -354,6 +386,8 @@
   .pin.diet7{border-color:var(--diet7);}
   .pin.env8{border-color:var(--env8);}
   .pin.diet9{border-color:var(--diet9);}
+  .pin.cond12{border-color:var(--cond12);}
+  .pin.detox13{border-color:var(--detox13);}
   .pin.perf11{border-color:var(--perf11);}
   .link-row{display:flex; gap:8px; flex-wrap:wrap; justify-content:center;}
   .link-row span{font-size:.8rem; background:var(--foam); padding:6px 12px; border-radius:100px; color:var(--deep2);}
@@ -366,6 +400,8 @@
   .link-row span.diet7{background:var(--diet7Light);}
   .link-row span.env8{background:var(--env8Light);}
   .link-row span.diet9{background:var(--diet9Light);}
+  .link-row span.cond12{background:var(--cond12Light);}
+  .link-row span.detox13{background:var(--detox13Light);}
   .link-row span.perf11{background:var(--perf11Light);}
 
   .quad-row{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0;}
@@ -420,6 +456,8 @@
   .toggle-group.diet7 .toggle-btn.active{border-color:var(--diet7); background:var(--diet7);}
   .toggle-group.env8 .toggle-btn.active{border-color:var(--env8); background:var(--env8);}
   .toggle-group.diet9 .toggle-btn.active{border-color:var(--diet9); background:var(--diet9);}
+  .toggle-group.cond12 .toggle-btn.active{border-color:var(--cond12); background:var(--cond12);}
+  .toggle-group.detox13 .toggle-btn.active{border-color:var(--detox13); background:var(--detox13);}
   .toggle-group.perf11 .toggle-btn.active{border-color:var(--perf11); background:var(--perf11);}
   .toggle-view{background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; margin-top:14px; min-height:100px;}
   .toggle-view .anim{font-size:2.2rem; text-align:center; margin-bottom:10px;}
@@ -438,6 +476,8 @@
   .flow-arrow.diet7{color:var(--diet7);}
   .flow-arrow.env8{color:var(--env8);}
   .flow-arrow.diet9{color:var(--diet9);}
+  .flow-arrow.cond12{color:var(--cond12);}
+  .flow-arrow.detox13{color:var(--detox13);}
   .flow-arrow.perf11{color:var(--perf11);}
 
   .steps-list{display:flex; flex-direction:column; gap:10px; margin:20px 0;}
@@ -453,6 +493,8 @@
   .step-item.diet7.active .num{background:var(--diet7);}
   .step-item.env8.active .num{background:var(--env8);}
   .step-item.diet9.active .num{background:var(--diet9);}
+  .step-item.cond12.active .num{background:var(--cond12);}
+  .step-item.detox13.active .num{background:var(--detox13);}
   .step-item.perf11.active .num{background:var(--perf11);}
   .step-item .glyph{font-size:1.3rem;}
 
@@ -468,6 +510,8 @@
   .mantra.diet7{color:var(--diet7);}
   .mantra.env8{color:var(--env8);}
   .mantra.diet9{color:var(--diet9);}
+  .mantra.cond12{color:var(--cond12);}
+  .mantra.detox13{color:var(--detox13);}
   .mantra.perf11{color:var(--perf11);}
 
   .tab-row{display:flex; gap:8px; margin:20px 0 0; flex-wrap:wrap;}
@@ -515,6 +559,10 @@
   .ten-check.env8.checked{background:var(--env8);}
   .ten-check.diet9{border-color:var(--diet9);}
   .ten-check.diet9.checked{background:var(--diet9);}
+  .ten-check.cond12{border-color:var(--cond12);}
+  .ten-check.cond12.checked{background:var(--cond12);}
+  .ten-check.detox13{border-color:var(--detox13);}
+  .ten-check.detox13.checked{background:var(--detox13);}
   .ten-check.perf11{border-color:var(--perf11);}
   .ten-check.perf11.checked{background:var(--perf11);}
   .ten-text{font-size:.94rem;}
@@ -542,6 +590,8 @@
   .flash-front.diet7{background:var(--diet7);}
   .flash-front.env8{background:var(--env8);}
   .flash-front.diet9{background:var(--diet9);}
+  .flash-front.cond12{background:var(--cond12);}
+  .flash-front.detox13{background:var(--detox13);}
   .flash-front.perf11{background:var(--perf11);}
   .flash-back{background:var(--aqua); color:var(--deep); transform:rotateY(180deg); font-weight:600;}
   .flash-back.protein{background:#F0B79C; color:var(--deep);}
@@ -553,6 +603,8 @@
   .flash-back.diet7{background:#E4A9CE; color:var(--deep);}
   .flash-back.env8{background:#E0D08C; color:var(--deep);}
   .flash-back.diet9{background:#AEB8F0; color:var(--deep);}
+  .flash-back.cond12{background:#8FD9C4; color:var(--deep);}
+  .flash-back.detox13{background:#C7ADE8; color:var(--deep);}
   .flash-back.perf11{background:#F0A99E; color:var(--deep);}
 
   .quiz-shell{background:#fff; border:1px solid var(--line); border-radius:14px; padding:26px;}
@@ -569,6 +621,8 @@
   .quiz-progress-fill.diet9{background:var(--diet9);}
   .quiz-progress-fill.perf11{background:var(--perf11);}
   .quiz-progress-fill.final{background:var(--final);}
+  .quiz-progress-fill.cond12{background:var(--cond12);}
+  .quiz-progress-fill.detox13{background:var(--detox13);}
   .quiz-score-pill{background:var(--foam); padding:6px 14px; border-radius:100px; font-size:.85rem; font-weight:600; color:var(--deep2);}
   .q-num{color:var(--teal); font-weight:700; font-size:.82rem; margin-bottom:6px;}
   .q-num.protein{color:var(--protein);}
@@ -581,6 +635,8 @@
   .q-num.diet9{color:var(--diet9);}
   .q-num.perf11{color:var(--perf11);}
   .q-num.final{color:var(--final);}
+  .q-num.cond12{color:var(--cond12);}
+  .q-num.detox13{color:var(--detox13);}
   .q-text{font-size:1.08rem; font-weight:600; color:var(--deep); margin-bottom:16px;}
   .q-opt{display:block; width:100%; text-align:left; background:#fff; border:1.5px solid var(--line); border-radius:10px; padding:13px 16px; margin-bottom:10px; cursor:pointer; font-size:.94rem; font-family:'Work Sans',sans-serif; transition:border-color .15s, background .15s;}
   .q-opt:hover{border-color:var(--teal);}
@@ -602,6 +658,8 @@
   .quiz-btn.primary.diet9{background:var(--diet9);}
   .quiz-btn.primary.perf11{background:var(--perf11);}
   .quiz-btn.primary.final{background:var(--final);}
+  .quiz-btn.primary.cond12{background:var(--cond12);}
+  .quiz-btn.primary.detox13{background:var(--detox13);}
   .quiz-btn.primary:disabled{background:#ccd7da; cursor:not-allowed;}
   .quiz-btn.ghost{background:transparent; color:var(--deep2); border:1px solid var(--line);}
   .quiz-result{text-align:center; padding:20px 0;}
@@ -4396,18 +4454,339 @@
         <section>
           <div class="eyebrow perf11">LESSON 11 ASSESSMENT</div>
           <h2>Test yourself</h2>
-          <p>A 20-question practice test built from the study guide's question-by-question breakdown is ready now. The official 30-question Lesson 11 Test will drop in as soon as that PDF is uploaded — the practice test isn't verbatim from Alive, so treat it as a study aid rather than a substitute for the real thing.</p>
+          <p>A 20-question practice test built from the study guide, or the full 30-question official Lesson 11 Test.</p>
           <div class="tab-row" data-tabgroup="u11quiz">
-            <div class="tab-btn active" data-tab="practice">📘 Unit 11 Practice Test (20Q)</div>
-            <div class="tab-btn" data-tab="official">📋 Official Lesson 11 Test (30Q) — awaiting upload</div>
+            <div class="tab-btn" data-tab="practice">📘 Unit 11 Practice Test (20Q)</div>
+            <div class="tab-btn active" data-tab="official">📋 Official Lesson 11 Test (30Q)</div>
           </div>
-          <div class="quiz-note" id="u11QuizNote" style="display:none;">Placeholder — upload the official Lesson 11 Test PDF to unlock this quiz.</div>
+          <div class="quiz-note" id="u11QuizNote">The PDF didn't include an answer key. Most answers are directly confirmed by the course write-up. A couple of specific claims (the oral-glutathione statement, and the exact arterial-closure percentage tied to angina symptoms) aren't spelled out word-for-word — those are flagged with ⚠ so you can verify against the official key.</div>
           <div class="quiz-shell" id="quizShell11" style="margin-top:14px;"></div>
         </section>
 
       </div>
       <footer>Unit 11 · Performance Enhancement Programs — Natural Health Fundamentals study companion.</footer>
     </div>
+    <!-- ============================================================= -->
+    <!-- UNIT 12 PANEL (built from official assessment content — no narrative doc received yet) -->
+    <!-- ============================================================= -->
+    <div class="unit-panel" data-unit-panel="12">
+      <div class="hero cond12-hero">
+        <div class="hero-inner">
+          <div class="kicker">NATURAL HEALTH FUNDAMENTALS · UNIT 12 · BUILT FROM THE ASSESSMENT</div>
+          <h1>Fatigue, Weight & Common Conditions</h1>
+          <p class="lede">Fatigue and its underlying causes, viral infections, weight management, yeast syndrome, food allergies/migraines, PMS, and pre/post-surgery nutrition. This unit was built directly from the official Lesson 12 assessment content — no narrative teaching document has come through yet, so treat the framing here as a study-guide reconstruction rather than a verbatim reproduction of the course text.</p>
+          <div class="progress-shell">
+            <div class="droplet-gauge">
+              <svg viewBox="0 0 54 70">
+                <defs><clipPath id="dropClip12"><path d="M27 2 C27 2 6 30 6 46 A21 21 0 0 0 48 46 C48 30 27 2 27 2 Z"/></clipPath></defs>
+                <path d="M27 2 C27 2 6 30 6 46 A21 21 0 0 0 48 46 C48 30 27 2 27 2 Z" fill="none" stroke="#8FD9C4" stroke-width="1.5" opacity="0.5"/>
+                <rect id="gaugeFill12" x="0" y="70" width="54" height="70" fill="#8FD9C4" clip-path="url(#dropClip12)"/>
+              </svg>
+            </div>
+            <div>
+              <div class="gauge-label" id="gaugeText12">0 / 9 sections complete</div>
+              <div class="gauge-sub">Mark each section done as you go</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+
+        <section id="u12-sec-1" data-u12-section="1">
+          <div class="eyebrow cond12">12A · FATIGUE — CAUSES & DIET</div>
+          <h2>A symptom with many possible roots</h2>
+          <p>The assessment frames fatigue as multifactorial — allergies, poor digestion, colon toxicity, and hypoglycemia are all named as contributing factors, alongside underlying issues like low thyroid function, adrenal function, and Candida.</p>
+          <div class="center-wrap">
+            <div class="pin-row"><span class="pin cond12">Allergies</span><span class="pin cond12">Poor digestion</span><span class="pin cond12">Colon toxicity</span><span class="pin cond12">Hypoglycemia</span><span class="pin cond12">Low thyroid</span><span class="pin cond12">Adrenal function</span><span class="pin cond12">Candida</span></div>
+          </div>
+          <div class="mineral-note">🍽️ <b>The fatigue diet:</b> easily digested complex carbohydrates + adequate protein + at least 2 quarts of filtered water daily. 🔋 <b>Key mineral:</b> magnesium — supports cell respiration and energy production. 🦋 <b>Key nutrient for thyroid-related fatigue:</b> iodine. 💪 <b>Amino acid for energy/endurance:</b> L-carnitine (500-750mg twice daily), important for fatty-acid metabolism and efficient fat use in cells.</div>
+          <button class="mark-btn cond12" data-mark="12-1">Mark 12A done</button>
+        </section>
+
+        <section id="u12-sec-2" data-u12-section="2">
+          <div class="eyebrow cond12">12B · CHRONIC FATIGUE SYNDROME & FIBROMYALGIA</div>
+          <h2>A multifaceted approach</h2>
+          <p>The assessment describes a multi-part approach to CFS/fibromyalgia: herbal support (ginseng, ginger, turmeric, gingko), avoiding sugar/refined flour/caffeine/alcohol, nutritional therapy (magnesium, B12, other B vitamins, amino acids), and treating chronic infections (bladder, vagina, prostate, sinuses).</p>
+          <div class="mineral-note">🚨 One item that does <b>not</b> fit this approach: weekly juice fasting to relieve digestive problems. For someone already fatigued and nutritionally taxed, regular fasting risks worsening rather than relieving the underlying issue — a reminder that even "healthy" interventions need to match the person's actual condition. Regular vigorous exercise is a similar trap — CFS is associated with post-exertional malaise, so pushing hard exercise can set someone back rather than help.</div>
+          <button class="mark-btn cond12" data-mark="12-2">Mark 12B done</button>
+        </section>
+
+        <section id="u12-sec-3" data-u12-section="3">
+          <div class="eyebrow cond12">12C · VIRAL INFECTIONS</div>
+          <h2>Acute vs. chronic, and the nutrient support</h2>
+          <p>The immune response to viruses works primarily through lymphocyte attack functions and the formation of specific antiviral antibodies. Cell membrane integrity — supported mainly by vitamins C, E, A, and essential fatty acids — helps prevent a viral infection from taking hold in the first place.</p>
+          <div class="card-grid two">
+            <div class="flip-card"><span class="glyph">🩸</span><h4>Hepatitis A</h4><div class="detail">Associated with fatigue, yellowing of skin/eyes, and possibly an initial period of dark urine and pale/gray stools.</div></div>
+            <div class="flip-card"><span class="glyph">🩸</span><h4>Hepatitis B & C</h4><div class="detail">Transmitted through blood contact, with some possible exposure through sexual activity.</div></div>
+          </div>
+          <div class="mineral-note">💊 <b>Acute viral support:</b> rest, fluids, extra vitamin A, beta-carotene, vitamin C, and zinc — vitamin C especially is used rapidly by a sick/healing body, described as needed almost every hour. Zinc + vitamin A enhance each other's immune-supportive effects. If using higher-dose zinc for an acute infection, add extra copper and manganese (and possibly iron) for several weeks afterward, since high-dose zinc can compete with these minerals. Echinacea is named as a mild "antibiotic" option during the initial phase of infection, in place of pharmaceutical antibiotics for appropriate situations.</div>
+          <button class="mark-btn cond12" data-mark="12-3">Mark 12C done</button>
+        </section>
+
+        <section id="u12-sec-4" data-u12-section="4">
+          <div class="eyebrow cond12">12D · WEIGHT MANAGEMENT</div>
+          <h2>BMR, behaviour patterns, and the toxin-release problem</h2>
+          <div class="mineral-note">⚙️ <b>BMR (Basal Metabolic Rate):</b> the rate the body burns calories to maintain function at rest — affected by gender, age, diet, activity level, thyroid function, sleep, body fat, temperature, weight, and genetics.</div>
+          <p style="font-weight:600; color:var(--deep2); margin-top:16px;">Behaviour patterns for optimum weight — click each:</p>
+          <div class="card-grid">
+            <div class="flip-card"><span class="glyph">🔄</span><h4>Rotate foods</h4><div class="detail">Supports variety instead of repetitive eating.</div></div>
+            <div class="flip-card"><span class="glyph">☀️</span><h4>Eat most food early</h4><div class="detail">Front-loads calories for better use through the day.</div></div>
+            <div class="flip-card"><span class="glyph">🎯</span><h4>Focus on what you eat</h4><div class="detail">Not on what you're avoiding — a positive framing.</div></div>
+          </div>
+          <div class="mineral-note">🚨 Daily weighing to "stay on track" is <b>not</b> one of the recommended behaviour patterns — it can create anxiety and an unhelpful, obsessive relationship with the number rather than the behaviour itself.</div>
+          <p style="margin-top:16px;">During weight loss, more tissue is broken down and stored toxins can be released in greater amounts — supporting the body's detox capacity matters here (higher-dose vitamin C with vitamin E and selenium is one suggested approach). Lemon water 15-30 minutes before meals is suggested to support digestion and fat utilization.</p>
+          <button class="mark-btn cond12" data-mark="12-4">Mark 12D done</button>
+        </section>
+
+        <section id="u12-sec-5" data-u12-section="5">
+          <div class="eyebrow cond12">12E · THYROID EXTREMES</div>
+          <h2>Hyperthyroidism</h2>
+          <p>Weight loss or inability to gain weight, alongside rapid heart rate, sweaty palms, and insomnia, points toward hyperthyroidism — a reminder that unexplained weight changes deserve a look beyond diet alone.</p>
+          <button class="mark-btn cond12" data-mark="12-5">Mark 12E done</button>
+        </section>
+
+        <section id="u12-sec-6" data-u12-section="6">
+          <div class="eyebrow cond12">12F · YEAST SYNDROME (CANDIDA)</div>
+          <h2>The three-faceted approach</h2>
+          <p>Common features: cravings for and overeating of sweets, breads, or alcohol; sensitivity to molds, dampness, and certain smells; mental symptoms like depression, mood swings, or confusion; and chronic fatigue, indigestion, or food reactions.</p>
+          <div class="steps-list">
+            <div class="step-item cond12"><div class="num">1</div><div><span class="glyph">🍗</span> <b>Starve it</b> — eat foods that don't let yeast thrive: poultry, fish, nuts, seeds, occasional eggs.</div></div>
+            <div class="step-item cond12"><div class="num">2</div><div><span class="glyph">🧄</span> <b>Diminish it</b> — fresh garlic, caprylic acid, or oregano oil.</div></div>
+            <div class="step-item cond12"><div class="num">3</div><div><span class="glyph">🦠</span> <b>Replenish</b> — restore the colon with friendly bacteria.</div></div>
+          </div>
+          <div class="mantra cond12">STARVE IT → DIMINISH IT → REPLENISH</div>
+          <button class="mark-btn cond12" data-mark="12-6">Mark 12F done</button>
+        </section>
+
+        <section id="u12-sec-7" data-u12-section="7">
+          <div class="eyebrow cond12">12G · FOOD ALLERGIES & MIGRAINES</div>
+          <h2>Identifying triggers</h2>
+          <p>Foods identified as possible migraine triggers via allergic-type reactions: alcoholic beverages, chocolate, eggs, and cheese.</p>
+          <div class="mineral-note">🔍 <b>Best practical testing for food allergies:</b> an elimination diet — removing suspected foods, then reintroducing them one at a time to observe reactions. This is considered more practical than lab-based methods in many nutrition-practice contexts.</div>
+          <button class="mark-btn cond12" data-mark="12-7">Mark 12G done</button>
+        </section>
+
+        <section id="u12-sec-8" data-u12-section="8">
+          <div class="eyebrow cond12">12H · PMS</div>
+          <h2>Blood sugar, hormones, and B vitamins</h2>
+          <p>PMS is aggravated by low blood sugar generated by stress and intake of refined flour/sugar products. Low progesterone levels are pointed to as a main factor in PMS symptoms.</p>
+          <div class="mineral-note">🧪 Magnesium, supplemented at amounts up to <b>1.5x the calcium level</b>, is suggested to help reduce some PMS symptoms. Anxiety symptoms — mood swings, irritability — often respond to extra B vitamins, particularly <b>thiamin (B1)</b> and <b>pyridoxine (B6)</b>.</div>
+          <button class="mark-btn cond12" data-mark="12-8">Mark 12H done</button>
+        </section>
+
+        <section id="u12-sec-9" data-u12-section="9">
+          <div class="eyebrow cond12">12I · PRE/POST-SURGERY NUTRITION</div>
+          <h2>Supporting healing</h2>
+          <div class="steps-list">
+            <div class="step-item cond12"><div class="num">1</div><div>Avoid congestive foods around the time of surgery.</div></div>
+            <div class="step-item cond12"><div class="num">2</div><div>Vitamins A and C, plus zinc, can help speed healing time.</div></div>
+            <div class="step-item cond12"><div class="num">3</div><div>A gentler detoxification approach can be considered a couple of months post-surgery, especially where general anesthesia was used — allowing the body to stabilize and heal first.</div></div>
+          </div>
+          <button class="mark-btn cond12" data-mark="12-9">Mark 12I done</button>
+        </section>
+
+        <section class="tight">
+          <div class="eyebrow cond12">CORE RECALL</div>
+          <h2>15 things you absolutely need to remember</h2>
+          <div class="ten-counter" id="tenCounter12">0 / 15 checked off</div>
+          <ul class="ten-list" id="tenList12">
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Fatigue has many possible contributing factors — allergies, digestion, colon toxicity, hypoglycemia.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Fatigue diet: complex carbs + adequate protein + 2 quarts of water daily.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Magnesium → cell respiration/energy production.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Iodine → thyroid function → metabolism/energy.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">L-carnitine → fatty-acid metabolism → energy/endurance.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">CFS/fibromyalgia approach is multifaceted — not weekly fasting, not vigorous exercise.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Acute viral support: rest + fluids + A/beta-carotene/C/zinc.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">High-dose zinc → add copper/manganese afterward.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">BMR = calories burned at rest, affected by many individual factors.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Daily weighing is not a recommended behaviour pattern for optimum weight.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Weight loss releases stored toxins — support detox capacity.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Hyperthyroidism → weight loss + rapid heart rate + sweaty palms + insomnia.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Yeast syndrome: starve it, diminish it, replenish good bacteria.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">Elimination diet = best practical food-allergy test.</div></li>
+            <li class="ten-item"><div class="ten-check cond12">✓</div><div class="ten-text">PMS: magnesium up to 1.5x calcium; B1 + B6 for mood symptoms.</div></li>
+          </ul>
+        </section>
+
+        <section class="tight">
+          <div class="eyebrow cond12">REVIEW</div>
+          <h2>Flashcard deck — Fatigue, Weight & Common Conditions</h2>
+          <p>Tap a card to flip it. Reshuffle whenever you like.</p>
+          <div class="flash-deck" id="flashDeck12"></div>
+          <button class="mark-btn cond12" id="shuffleFlash12">Shuffle deck</button>
+        </section>
+
+        <section>
+          <div class="eyebrow cond12">LESSON 12 ASSESSMENT</div>
+          <h2>Test yourself</h2>
+          <p>The full 30-question official Lesson 12 Test.</p>
+          <div class="quiz-note">The PDF didn't include an answer key, and no narrative teaching document has come through for this unit yet — so more of these answers than usual are reasoned out rather than confirmed against course text. Several are flagged with ⚠ for you to verify closely against the official key.</div>
+          <div class="quiz-shell" id="quizShell12" style="margin-top:14px;"></div>
+        </section>
+
+      </div>
+      <footer>Unit 12 · Fatigue, Weight & Common Conditions — Natural Health Fundamentals study companion.</footer>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- UNIT 13 PANEL (built from official assessment content — no narrative doc received yet) -->
+    <!-- ============================================================= -->
+    <div class="unit-panel" data-unit-panel="13">
+      <div class="hero detox13-hero">
+        <div class="hero-inner">
+          <div class="kicker">NATURAL HEALTH FUNDAMENTALS · UNIT 13 · BUILT FROM THE ASSESSMENT</div>
+          <h1>Detoxification & Cleansing</h1>
+          <p class="lede">What a toxin actually is, how the body eliminates them, fasting and cleansing practices, and the specific detox concerns around sugar, caffeine, and alcohol. Like Unit 12, this was built directly from the official Lesson 13 assessment content — no narrative teaching document has come through yet.</p>
+          <div class="progress-shell">
+            <div class="droplet-gauge">
+              <svg viewBox="0 0 54 70">
+                <defs><clipPath id="dropClip13"><path d="M27 2 C27 2 6 30 6 46 A21 21 0 0 0 48 46 C48 30 27 2 27 2 Z"/></clipPath></defs>
+                <path d="M27 2 C27 2 6 30 6 46 A21 21 0 0 0 48 46 C48 30 27 2 27 2 Z" fill="none" stroke="#C7ADE8" stroke-width="1.5" opacity="0.5"/>
+                <rect id="gaugeFill13" x="0" y="70" width="54" height="70" fill="#C7ADE8" clip-path="url(#dropClip13)"/>
+              </svg>
+            </div>
+            <div>
+              <div class="gauge-label" id="gaugeText13">0 / 8 sections complete</div>
+              <div class="gauge-sub">Mark each section done as you go</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+
+        <section id="u13-sec-1" data-u13-section="1">
+          <div class="eyebrow detox13">13A · WHAT IS A TOXIN?</div>
+          <h2>A spectrum, not one thing</h2>
+          <div class="big-idea detox13">A toxin is any substance that creates irritating/harmful effects, undermines the body's health, stresses biochemical or organ functions, or actually damages tissues and organs — a spectrum from mild irritation to genuine organ damage, not a single fixed category.</div>
+          <p style="font-weight:600; color:var(--deep2);">We acquire toxins three ways — click each:</p>
+          <div class="card-grid">
+            <div class="flip-card"><span class="glyph">👃</span><h4>Breathing them</h4><div class="detail">Inhaled pollutants and airborne chemicals.</div></div>
+            <div class="flip-card"><span class="glyph">🍽️</span><h4>Ingesting them</h4><div class="detail">Through food, water, and supplements.</div></div>
+            <div class="flip-card"><span class="glyph">✋</span><h4>Contacting them</h4><div class="detail">Direct physical/skin contact.</div></div>
+          </div>
+          <div class="mineral-note">🏭 The body also produces toxins <b>internally</b>, simply through its normal everyday metabolic functions — detoxification isn't only about external exposure.</div>
+          <button class="mark-btn detox13" data-mark="13-1">Mark 13A done</button>
+        </section>
+
+        <section id="u13-sec-2" data-u13-section="2">
+          <div class="eyebrow detox13">13B · THE DETOX ORGANS</div>
+          <h2>Liver leads, skin and lymph support</h2>
+          <div class="mantra detox13" style="font-size:1.1rem;">THE LIVER IS THE MOST IMPORTANT DETOXIFICATION ORGAN</div>
+          <p>The liver transforms many toxic substances into harmless agents. Skin and dermal structures — sweat glands, sebaceous glands, and tears — form another detoxification pathway, working alongside the lymphatic, urinary, and respiratory systems.</p>
+          <div class="mineral-note">💧 If asked for the single most important <i>detoxifier</i> (as opposed to detox <i>organ</i>), the answer shifts to <b>water</b> — it underlies virtually every elimination pathway the body has, from urine to sweat to bowel movements.</div>
+          <button class="mark-btn detox13" data-mark="13-2">Mark 13B done</button>
+        </section>
+
+        <section id="u13-sec-3" data-u13-section="3">
+          <div class="eyebrow detox13">13C · WHO NEEDS TO DETOX, AND WHEN</div>
+          <h2>Individualized, not automatic</h2>
+          <p>Who needs to detoxify and when is based in part on individual lifestyle and needs — not a one-size-fits-all schedule. That said, a general seasonal rhythm is suggested: at least a 1-2 week detox program in <b>spring</b> and <b>autumn</b>.</p>
+          <div class="mineral-note">🚨 Toxicity is framed as a much greater concern now than in the past, and a long list of common complaints — arthritis, allergies, obesity, skin problems, fatigue, aches, coughs, immune weakness, and headaches — are all connected to toxicity in this framework.</div>
+          <button class="mark-btn detox13" data-mark="13-3">Mark 13C done</button>
+        </section>
+
+        <section id="u13-sec-4" data-u13-section="4">
+          <div class="eyebrow detox13">13D · CLEANSING HERBS</div>
+          <h2>Purifiers and laxatives</h2>
+          <div class="card-grid two">
+            <div class="flip-card"><span class="glyph">🌶️</span><h4>Cayenne pepper</h4><div class="detail">Described as a blood purifier that increases fluid elimination and sweat.</div></div>
+            <div class="flip-card"><span class="glyph">🌿</span><h4>Senna leaf (+ licorice + dandelion)</h4><div class="detail">The classic herbal laxative grouping used in detoxification support.</div></div>
+          </div>
+          <button class="mark-btn detox13" data-mark="13-4">Mark 13D done</button>
+        </section>
+
+        <section id="u13-sec-5" data-u13-section="5">
+          <div class="eyebrow detox13">13E · SUGAR, CAFFEINE & ALCOHOL</div>
+          <h2>Three substances with their own detox profile</h2>
+          <div class="card-grid">
+            <div class="flip-card"><span class="glyph">🍬</span><h4>Sugar</h4><div class="detail">Linked to yeast overgrowth, alcoholism, anxiety, and depression. Sugar-detox symptoms can include fatigue, anxiety, irritability, and palpitations. Nutrients that help reduce sugar cravings: B vitamins, L-glutamine, zinc, and chromium.</div></div>
+            <div class="flip-card"><span class="glyph">☕</span><h4>Caffeine</h4><div class="detail">Negative effects include anxiety, heartburn, and mild arrhythmias/tachycardia/palpitations, plus a kidney-stone association. It does <i>not</i> increase mineral absorption — if anything, caffeine can interfere with calcium absorption.</div></div>
+            <div class="flip-card"><span class="glyph">🍷</span><h4>Alcohol</h4><div class="detail">Impairs (rather than increases) the liver's ability to break down estrogen; damages the heart/blood vessels; affects carbohydrate metabolism (risking hypoglycemia); and slows fat metabolism, allowing fat to build up in the liver.</div></div>
+          </div>
+          <button class="mark-btn detox13" data-mark="13-5">Mark 13E done</button>
+        </section>
+
+        <section id="u13-sec-6" data-u13-section="6">
+          <div class="eyebrow detox13">13F · FASTING & JUICE CLEANSING</div>
+          <h2>Benefits, planning, and the hardest days</h2>
+          <p>Named benefits of fasting: reduced allergies, creativity, better sleep, and anti-aging effects. Grapefruit, lemon, cucumber, and greens are named as the juices most helpful specifically for weight loss.</p>
+          <div class="steps-list">
+            <div class="step-item detox13"><div class="num">1</div><div>The first two days of a fast are generally the most challenging.</div></div>
+            <div class="step-item detox13"><div class="num">2</div><div>Regular exercise during a cleanse stimulates sweating and skin elimination.</div></div>
+            <div class="step-item detox13"><div class="num">3</div><div>Breaking a fast must be planned and executed slowly and carefully to avoid triggering symptoms or sickness.</div></div>
+          </div>
+          <div class="mineral-note">🚨 During an actual fast, the emphasis is on giving the digestive system a rest — heavy supplementation during the fast itself runs somewhat counter to that purpose. More toxins are released during detoxification generally, and greater intake of water, fibre, and antioxidants is suggested to help protect against them.</div>
+          <button class="mark-btn detox13" data-mark="13-6">Mark 13F done</button>
+        </section>
+
+        <section id="u13-sec-7" data-u13-section="7">
+          <div class="eyebrow detox13">13G · TERMS TO KNOW</div>
+          <h2>Don't confuse these on the exam</h2>
+          <div class="mini-check">
+            <div style="font-weight:600;">Spot the exam trap</div>
+            <div style="font-size:.92rem; margin-top:4px;">"Homeostasis" means the body's functions are out of balance. True or false?</div>
+            <div class="options">
+              <div class="mini-opt" data-correct="false">True</div>
+              <div class="mini-opt" data-correct="true">False — homeostasis means internal balance/stability, the opposite of this definition</div>
+            </div>
+            <div class="mini-feedback"></div>
+          </div>
+          <div class="mineral-note" style="margin-top:14px;">🧠 Toxins stored in fatty tissue: many lipophilic (fat-soluble) toxins accumulate in the body's fat stores over time — part of why weight loss can release stored toxins (Unit 12 connection).</div>
+          <button class="mark-btn detox13" data-mark="13-7">Mark 13G done</button>
+        </section>
+
+        <section id="u13-sec-8" data-u13-section="8">
+          <div class="eyebrow detox13">13H · WHAT INCREASES TOXICITY</div>
+          <h2>Bottlenecks in elimination, not elimination itself</h2>
+          <div class="center-wrap">
+            <div class="pin-row"><span class="pin detox13">Poor digestion</span><span class="pin detox13">Reduced liver function</span><span class="pin detox13">Poor kidney elimination</span></div>
+          </div>
+          <div class="mineral-note">✅ By contrast, <b>excessive sweating is an elimination pathway, not a cause of increased toxicity</b> — sweating removes toxins rather than adding to the load. The pattern to notice: toxicity tends to build up when an elimination pathway is impaired, not when the body is actively using one.</div>
+          <button class="mark-btn detox13" data-mark="13-8">Mark 13H done</button>
+        </section>
+
+        <section class="tight">
+          <div class="eyebrow detox13">CORE RECALL</div>
+          <h2>12 things you absolutely need to remember</h2>
+          <div class="ten-counter" id="tenCounter13">0 / 12 checked off</div>
+          <ul class="ten-list" id="tenList13">
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">A toxin spans a spectrum from irritation to organ damage.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Toxins enter via breathing, ingesting, and physical contact — plus internal production.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Liver = most important detox organ.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Water = most important single detoxifier.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Detox needs are individualized; spring + autumn are suggested general timing.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Cayenne = blood purifier + sweat/fluid elimination.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Senna leaf = classic herbal laxative.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Caffeine does not increase mineral absorption.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Alcohol impairs estrogen breakdown and slows fat metabolism.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">First 2 days of a fast are typically hardest.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Homeostasis = balance, not imbalance.</div></li>
+            <li class="ten-item"><div class="ten-check detox13">✓</div><div class="ten-text">Excessive sweating is elimination, not a cause of toxicity.</div></li>
+          </ul>
+        </section>
+
+        <section class="tight">
+          <div class="eyebrow detox13">REVIEW</div>
+          <h2>Flashcard deck — Detoxification & Cleansing</h2>
+          <p>Tap a card to flip it. Reshuffle whenever you like.</p>
+          <div class="flash-deck" id="flashDeck13"></div>
+          <button class="mark-btn detox13" id="shuffleFlash13">Shuffle deck</button>
+        </section>
+
+        <section>
+          <div class="eyebrow detox13">LESSON 13 ASSESSMENT</div>
+          <h2>Test yourself</h2>
+          <p>The full 30-question official Lesson 13 Test.</p>
+          <div class="quiz-note">The PDF didn't include an answer key, and no narrative teaching document has come through for this unit yet — so more of these answers than usual are reasoned out rather than confirmed against course text. Several are flagged with ⚠ for you to verify closely against the official key.</div>
+          <div class="quiz-shell" id="quizShell13" style="margin-top:14px;"></div>
+        </section>
+
+      </div>
+      <footer>Unit 13 · Detoxification & Cleansing — Natural Health Fundamentals study companion.</footer>
+    </div>
+
 
     <!-- ============================================================= -->
     <!-- FINAL EXAM PANEL -->
@@ -4426,8 +4805,8 @@
         <section class="tight">
           <div class="eyebrow final">WHAT'S COVERED</div>
           <h2>Currently drawing from Units 1–9 and 11</h2>
-          <div class="big-idea final">This exam pulls from the <b>official</b> Lesson tests for Units 1, 2, 3, 4, 5, 6, 7, 8, and 9, plus the <b>constructed practice test</b> for Unit 11 (no official Lesson 11 PDF yet). Combined, that's a bank of <b id="finalPoolSize">295</b> questions to draw from.</div>
-          <div class="mineral-note">🚧 <b>Not yet included:</b> Unit 10 (never sent), and Units 12–13 (still locked, awaiting content). Once those units are built with real question banks, they'll automatically join this exam's question pool — no separate request needed.</div>
+          <div class="big-idea final">This exam pulls from the <b>official</b> Lesson tests for Units 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, and 13. Combined, that's a bank of <b id="finalPoolSize">295</b> questions to draw from.</div>
+          <div class="mineral-note">🚧 <b>Not yet included:</b> Unit 10 (never sent). Units 12 and 13 were built directly from their official assessments without a narrative teaching document, so double-check their flagged answers against your official keys before treating them as fully verified.</div>
         </section>
 
         <section>
@@ -4461,10 +4840,12 @@ const units = [
   {id:'8', title:'Unit 8 · Environmental Nutrition', lessons:['Food processing','Chemical exposure','Endocrine disruptors','Indoor/household/air','Food additives','Artificial sweeteners','GM foods','Irradiation + radiation','Grounding','Produce + imports','Lesson 8 test']},
   {id:'9', title:'Unit 9 · Building the Ideal Diet', lessons:['New Basic Four','Variety/balance/moderation','Food rotation','Seasonal + local','Acid-alkaline + combining','Individualization','Digestion + absorption','Supplements + food','Nuts/seeds/grains/beans','Meal planning','Constitutional typing','Lesson 9 test']},
   {id:'11', title:'Unit 11 · Performance Enhancement', lessons:['Big idea','Anti-aging program','What aging affects','Theories of aging','Free radicals + antioxidants','Anti-aging diet + CoQ10','Stress physiology','Stress + digestion + types','Stress-depleted nutrients','Lifestyle + stress','T cells & B cells','Lymphatic system','Immune suppressors/supporters','Fever','Cancer prevention','Cardiovascular prevention','Athletic performance intro','Carbs + athlete ratio','Sweat/water/minerals','Antioxidants + BCAAs','Fertility/joints/vegetarianism','Lesson 11 test']},
+  {id:'12', title:'Unit 12 · Fatigue, Weight & Conditions', lessons:['Fatigue causes + diet','CFS + fibromyalgia','Viral infections','Weight management','Thyroid extremes','Yeast syndrome','Food allergies + migraines','PMS','Pre/post-surgery nutrition','Lesson 12 test']},
+  {id:'13', title:'Unit 13 · Detoxification & Cleansing', lessons:['What is a toxin?','The detox organs','Who needs to detox','Cleansing herbs','Sugar/caffeine/alcohol','Fasting + juice cleansing','Terms to know','What increases toxicity','Lesson 13 test']},
 ];
 const midUnit = {id:'mid', title:'🔄 Midpoint Integration', lessons:['Big picture','Food \u2192 energy','Nutrient connection map','Oxygen/bone/brain networks','Gut + food matrix','Where supplements fit','The three traps','Follow one meal','The 20 things','Checkpoint']};
-const unitTotals = {'1':18, '2':11, '3':17, '4':13, '5':13, '6':16, '7':15, '8':11, '9':12, '11':22, 'mid':10};
-const lockedUnits = [10,12,13];
+const unitTotals = {'1':18, '2':11, '3':17, '4':13, '5':13, '6':16, '7':15, '8':11, '9':12, '11':22, '12':10, '13':9, 'mid':10};
+const lockedUnits = [10];
 
 let activeUnit = '1';
 let expandedUnit = '1';
@@ -4575,7 +4956,7 @@ document.querySelectorAll('.mark-btn[data-mark]').forEach(btn=>{
     updateGauge(unitNum);
   });
 });
-updateGauge('1'); updateGauge('2'); updateGauge('3'); updateGauge('4'); updateGauge('5'); updateGauge('6'); updateGauge('7'); updateGauge('8'); updateGauge('9'); updateGauge('11'); updateGauge('mid');
+updateGauge('1'); updateGauge('2'); updateGauge('3'); updateGauge('4'); updateGauge('5'); updateGauge('6'); updateGauge('7'); updateGauge('8'); updateGauge('9'); updateGauge('11'); updateGauge('12'); updateGauge('13'); updateGauge('mid');
 
 /* ============================================================= */
 /* GENERIC INTERACTIVE COMPONENTS (shared across units)           */
@@ -4680,14 +5061,9 @@ document.querySelectorAll('.tab-row[data-tabgroup]').forEach(row=>{
       }
       if(groupName === 'u11quiz'){
         const mode = this.dataset.tab;
-        if(mode === 'official'){
-          document.getElementById('quizShell11').innerHTML = '<div class="quiz-result"><p style="max-width:50ch; margin:0 auto;">The official 30-question Lesson 11 Test will appear here once that PDF is uploaded. For now, try the Unit 11 Practice Test.</p></div>';
-          document.getElementById('u11QuizNote').style.display = 'block';
-        } else {
-          u11Quiz.pool = practiceTestQuiz11Pool;
-          document.getElementById('u11QuizNote').style.display = 'none';
-          startQuiz(u11Quiz);
-        }
+        u11Quiz.pool = mode === 'official' ? officialQuiz11Pool : practiceTestQuiz11Pool;
+        document.getElementById('u11QuizNote').style.display = mode === 'official' ? 'block' : 'none';
+        startQuiz(u11Quiz);
       }
     });
   });
@@ -4728,6 +5104,8 @@ wireChecklist('tenList7','tenCounter7',20);
 wireChecklist('tenList8','tenCounter8',14);
 wireChecklist('tenList9','tenCounter9',17);
 wireChecklist('tenList11','tenCounter11',15);
+wireChecklist('tenList12','tenCounter12',15);
+wireChecklist('tenList13','tenCounter13',12);
 
 /* Body-water % reveal (Unit 1) */
 document.getElementById('revealPct1').addEventListener('click', ()=>{
@@ -5098,6 +5476,55 @@ document.getElementById('shuffleFlash11').addEventListener('click', ()=>{
   renderFlash('flashDeck11', flash11Data, false);
   document.getElementById('flashDeck11').querySelectorAll('.flash-front').forEach(el=>el.classList.add('perf11'));
   document.getElementById('flashDeck11').querySelectorAll('.flash-back').forEach(el=>el.classList.add('perf11'));
+});
+
+const flash12Data = [
+  {q:"Fatigue diet emphasizes?", a:"Easily digested complex carbs + adequate protein + 2 quarts water daily."},
+  {q:"Mineral tied to cell respiration/energy?", a:"Magnesium."},
+  {q:"Nutrient for thyroid-related fatigue?", a:"Iodine."},
+  {q:"Amino acid for energy/endurance via fatty-acid metabolism?", a:"L-carnitine."},
+  {q:"What does NOT belong in a CFS/fibromyalgia protocol?", a:"Weekly juice fasting / vigorous exercise."},
+  {q:"Acute viral support nutrients?", a:"Vitamin A, beta-carotene, vitamin C, zinc."},
+  {q:"After high-dose zinc for infection, add?", a:"Copper + manganese (possibly iron)."},
+  {q:"BMR stands for?", a:"Basal Metabolic Rate."},
+  {q:"NOT a recommended weight-management behaviour?", a:"Weighing yourself daily."},
+  {q:"Weight loss releases stored?", a:"Toxins (from fat tissue)."},
+  {q:"Hyperthyroidism symptoms?", a:"Weight loss, rapid heart rate, sweaty palms, insomnia."},
+  {q:"Three-part yeast syndrome approach?", a:"Starve it, diminish it, replenish good bacteria."},
+  {q:"Best practical food-allergy test?", a:"Elimination diet."},
+  {q:"PMS magnesium guideline?", a:"Up to 1.5x the calcium level."},
+  {q:"B vitamins for PMS mood symptoms?", a:"Thiamin (B1) and pyridoxine (B6)."}
+];
+renderFlash('flashDeck12', flash12Data, false);
+document.getElementById('flashDeck12').closest('section').querySelectorAll('.flash-front').forEach(el=>el.classList.add('cond12'));
+document.getElementById('flashDeck12').closest('section').querySelectorAll('.flash-back').forEach(el=>el.classList.add('cond12'));
+document.getElementById('shuffleFlash12').addEventListener('click', ()=>{
+  renderFlash('flashDeck12', flash12Data, false);
+  document.getElementById('flashDeck12').querySelectorAll('.flash-front').forEach(el=>el.classList.add('cond12'));
+  document.getElementById('flashDeck12').querySelectorAll('.flash-back').forEach(el=>el.classList.add('cond12'));
+});
+
+const flash13Data = [
+  {q:"Three ways we acquire toxins?", a:"Breathing, ingesting, physical contact."},
+  {q:"Does the body make toxins internally?", a:"Yes, through normal everyday metabolic function."},
+  {q:"Most important detoxification organ?", a:"The liver."},
+  {q:"Most important single detoxifier?", a:"Water."},
+  {q:"Suggested detox timing?", a:"1-2 weeks in spring and autumn."},
+  {q:"Cayenne pepper's detox role?", a:"Blood purifier; increases fluid elimination and sweat."},
+  {q:"Classic herbal laxative?", a:"Senna leaf."},
+  {q:"Does caffeine increase mineral absorption?", a:"No — it does not, and can interfere with calcium absorption."},
+  {q:"Alcohol's effect on estrogen breakdown?", a:"Impairs it (doesn't increase it)."},
+  {q:"Hardest days of a fast?", a:"The first two days."},
+  {q:"What does homeostasis mean?", a:"Internal balance/stability — not imbalance."},
+  {q:"Does excessive sweating increase toxicity?", a:"No — it's an elimination pathway, not a cause of toxicity."}
+];
+renderFlash('flashDeck13', flash13Data, false);
+document.getElementById('flashDeck13').closest('section').querySelectorAll('.flash-front').forEach(el=>el.classList.add('detox13'));
+document.getElementById('flashDeck13').closest('section').querySelectorAll('.flash-back').forEach(el=>el.classList.add('detox13'));
+document.getElementById('shuffleFlash13').addEventListener('click', ()=>{
+  renderFlash('flashDeck13', flash13Data, false);
+  document.getElementById('flashDeck13').querySelectorAll('.flash-front').forEach(el=>el.classList.add('detox13'));
+  document.getElementById('flashDeck13').querySelectorAll('.flash-back').forEach(el=>el.classList.add('detox13'));
 });
 
 /* ============================================================= */
@@ -5750,9 +6177,118 @@ const practiceTestQuiz11Pool = [
   {q:"Which mineral is especially emphasized for female athletes due to its role in oxygen transport?", opts:["Calcium","Iron","Sodium","Chromium"], correct:1, explain:"Iron is especially important for female athletes because of its role in hemoglobin and myoglobin, supporting oxygen transport and endurance."}
 ];
 
+const officialQuiz11Pool = [
+  {q:"The anti-aging program can be employed by:", opts:["Anyone over the age of 40","Those on diets of processed foods, red meats, and cured meats","People under stress","A and C","All of the above"], correct:4, explain:"People over 40, those eating processed/red/cured meats, and people under stress are all named as candidates for the anti-aging program."},
+  {q:"The most common problems of aging affect which of the following?", opts:["Cardiovascular system","Nervous system","Endocrine system","A and B"], correct:3, explain:"Cardiovascular and nervous systems are the most commonly affected systems in this program's aging framework."},
+  {q:"Which of the following is NOT considered a factor in increasing the effects of aging?", opts:["Excess alcohol consumption","Hanging on to depression, anger, and grief","Inactivity","Overreating","all are factors that increase the effects of aging"], correct:4, explain:"Alcohol, unresolved negative emotions, inactivity, and overeating are all named factors that accelerate aging."},
+  {q:"Which of the following is the aging theory that suggests that molecular changes occur in the protein molecules of body tissues, causing microfibres to be laid down against the normal direction of other tissue fibres, therefore creating loss of elasticity, stiffness, and degeneration?", opts:["The free-radical theory","The aging clock theory","The telomerase inactivity theory","The cross-linking theory"], correct:3, explain:"This is the cross-linking theory of aging."},
+  {q:"Which of the following supplements may enhance specific immune functions and is critical for energy production by the mitochondria in our cells?", opts:["L-cysteine","CoQ10","Hydrochloric acid","Selenium"], correct:1, explain:"CoQ10 supports mitochondrial energy production and may enhance certain immune functions."},
+  {q:"Which of the following statements about stress is FALSE?", opts:["Stress may come to be seen as the primary contributing cause of most diseases","The brain and pituitary gland respond to stress by releasing the adrenocorticotropic hormone (ACTH), which stimulates the adrenals to increase production of hormones epinephrine, norepinephrine, and cortisol","The adrenaline released during stress raises blood sugar as it stimulates the liver to produce and release more glucose into the blood","Stress experienced around the time of eating diverts the energy needed for efficient digestion. Eating smaller amounts of very high quality food is essential.","All parts of the body are equally affected by stress"], correct:4, explain:"Not all parts of the body are equally affected — the digestive tract is described as the area most easily influenced by stress, followed by the neurological, circulatory, and muscular systems."},
+  {q:"Which of the following nutrients are commonly depleted by stress?", opts:["A, E, C, and the B vitamins","Zinc, selenium, and calcium","Magnesium, iron, potassium, sulfur, and molybdenum","A and B","All of the above"], correct:4, explain:"This comprehensive list of vitamins and minerals are all named as depleted by stress."},
+  {q:"Low levels of which nutrient may lead to impotence, a low sperm count, and a loss of sexual interest?", opts:["B12","Niacin","Zinc","Vitamin C"], correct:2, explain:"Zinc is the tested nutrient for these specific sexual-health associations."},
+  {q:"Which of the following are considered monounsaturated fats?", opts:["Olives, pecans, and walnuts","Olive oil, sesame oil, and fish","Avocados, pecans, and corn","Avocados, olives, and cashews"], correct:3, explain:"Avocados, olives, and cashews are the grouping most consistently rich in monounsaturated fat among these options."},
+  {q:"Which of the following statements about environmental pollution and radiation is FALSE?", opts:["Buying and eating certified organic foods as much as possible will help minimize exposure to pesticides and chemicals","Glutathione is helpful when utilized as an oral supplement to protect the lung membranes","A salt-soda bath following airline flights or long hours at a computer can be used for detoxification","Miso is known to protect against pollution and radiation.","With any radioactive iodine tests or exposure to iodine fallout, take kelp or iodine for several weeks before and after the test."], correct:1, explain:"Oral glutathione has poor bioavailability and is largely broken down during digestion, making this specific claim about protecting lung membranes questionable compared to the other statements.", flag:true},
+  {q:"Which body system removes foreign cells and proteins, eventually dumping them into the blood to be broken down?", opts:["Endocrine system","Lymphatic system","Nervous system","Urinary system"], correct:1, explain:"The lymphatic system collects foreign cells/proteins and eventually releases them into the blood for breakdown."},
+  {q:"Which of the following statements relating to the immune system is FALSE?", opts:["When an infection is present, it can commonly be felt in the lymph nodes in the area closest to the infection","Phagocytic white blood cells patrol the body for foreign substances and microorganisms, which they surround and kill or dissolve with their chemicals","Low protein intake and vitamin A and zinc deficiencies are most relevant to immune suppression","Fasting and detoxification diets can strengthen immune functions and reduce immune overload and reactions, as can be seen in allergies, infections, or autoimmune problems, such as rheumatoid arthritis","When fighting an infection, it is important to reduce a fever as quickly as possible, keeping the internal body temperature below 100 degrees Fahrenheit"], correct:4, explain:"Rapidly suppressing fever below 100°F is not the program's position — this is the deliberately false statement."},
+  {q:"Which of the following is NOT a key risk factor for cancer?", opts:["Undernutrition","Excess sunlight and radiation","Dietary excesses","Psychological influences","All of the above are risk factors"], correct:4, explain:"Undernutrition, excess sunlight/radiation, dietary excesses, and psychological influences are all named cancer risk factors."},
+  {q:"Which nutrient has been shown to be deficient in a large proportion of smokers who develop lung cancer, as it seems to specifically protect cells of the mucous membranes?", opts:["Ascorbic acid","Beta–carotene","Vitamin E","Zinc"], correct:1, explain:"Beta-carotene is specifically tied to mucous-membrane protection and lung cancer risk in smokers."},
+  {q:"Which nutrient reduces carcinogen production and strengthens immune cells and cell membranes against the penetration of viruses and toxic chemicals?", opts:["Ascorbic acid","Beta-carotene","Vitamin E","Zinc"], correct:0, explain:"Ascorbic acid (vitamin C) reduces carcinogen (nitrosamine) production and strengthens cell membranes against viruses and toxins."},
+  {q:"Which of the following foods can stimulate detoxifying enzymes and inhibit enzymes that create carcinogens?", opts:["Cruciferous vegetables","Onion","Garlic","B and C","All of the above"], correct:4, explain:"Cruciferous vegetables, onion, and garlic are all named for this detoxifying-enzyme effect."},
+  {q:"Which of the following foods should a person following a cancer-prevention diet NOT avoid?", opts:["Pickled food","Poultry","Barbecued foods","Excessive proteins","Smoked foods"], correct:1, explain:"Poultry is the food that does NOT need to be avoided — the others (pickled, barbecued, smoked foods, excessive protein) are the ones to reduce."},
+  {q:"A primary risk factor for cardiovascular disease is:", opts:["Cigarette smoking","High cholesterol","High blood pressure","All of the above"], correct:3, explain:"Smoking, high cholesterol, and high blood pressure are all named as primary CVD risk factors."},
+  {q:"Which of the following statements regarding cardiovascular disease and prevention is FALSE?", opts:["A prevention approach for minimizing blood vessel inflammation is to follow a primarily alkaline diet higher in fresh fruits and vegetables.","The ratios of total cholesterol to HDL and LDL to HDL are considered important parameters in evaluating cardiovascular risk","Focus should be on lowering HDL cholesterol while increasing LDL","Increased fiber – at least 20-30 grams daily – will help reduce blood pressure levels in those with elevations","Managing stress is an important key to cardiovascular health"], correct:2, explain:"This is backwards — the goal is to raise HDL and lower LDL, not the reverse, making this the false statement."},
+  {q:"Which of the following statements below describes an element of atherosclerosis?", opts:["The hardening of the inner arterial walls with lipids, smooth muscle cells from the blood vessel walls themselves, fibrin and calcium","Stimulated and added to by platelets and white blood cells","Is thought to begin with minor microinjuries to the vascular linings","A blood vessel usually must be more than half closed before symptoms, such as chest pain occurs","All of the above"], correct:4, explain:"All of these describe recognized elements of the atherosclerosis process, including that vessels are typically more than half closed before symptoms like angina appear.", flag:true},
+  {q:"Which of the following is a good recommendation for a balanced diet for athletes?", opts:["50 to 60% carbs, 15 to 20% protein, 25 to 30% fat","30 to 40% carbs, 20 to 30% protein, 30 to 40% fat","30 to 40% carbs, 30 to 40% protein, 10 to 20% fat","None of the above"], correct:0, explain:"50-60% carbohydrate, 15-20% protein, 25-30% fat is the tested athlete ratio."},
+  {q:"A deficiency of which vitamin (associated with sperm motility) has been related in part to male infertility?", opts:["Vitamin E","Vitamin A","Vitamin C","Vitamin K"], correct:0, explain:"Vitamin E is associated with sperm motility and male fertility."},
+  {q:"Which of the following statements regarding nutrition and athletes is FALSE?", opts:["Regular sweating causes the loss of water, vitamin B1, sodium, potassium, chloride, and magnesium","Protein is important for athletes, but excess intake can produce clogging of the colon and stress on the kidneys","Calcium-magnesium cellular exchange supports delivery of blood to the muscles","Our maximum aerobic exercise heart rate (calculated simply) is 220 minus our age"], correct:2, explain:"The calcium-magnesium cellular exchange is more directly tied to muscle contraction/relaxation and nerve conduction than literally \"delivering blood\" to muscles, making this the imprecise/false statement.", flag:true},
+  {q:"Our cell membranes can be protected only through a diet that is rich in antioxidant nutrients.", opts:["True","False"], correct:1, explain:"The word \"only\" makes this an overly absolute claim — cell membrane protection isn't exclusively a matter of antioxidant intake."},
+  {q:"A detox diet may be useful at times of intense stress.", opts:["True","False"], correct:0, explain:"This matches the program's stated recommendation for lighter, detox-type eating during intense stress."},
+  {q:"Lactic acid buildup helps fight free radicals in the body.", opts:["True","False"], correct:1, explain:"Lactic acid is not an antioxidant and is not described as fighting free radicals."},
+  {q:"Glucosamine has been shown to help in joint pain and stiffness, as it appears to be used by the body to support and build normal cartilage.", opts:["True","False"], correct:0, explain:"This matches the program's stated glucosamine/cartilage claim."},
+  {q:"If vegetarians regularly eat a balanced diet, deficiencies are rare and supplementation is not recommended", opts:["True","False"], correct:1, explain:"While deficiencies being rare on a balanced vegetarian diet is accurate, the added claim that supplementation is \"not recommended\" makes the full statement false."},
+  {q:"Supplementing with branched-chain amino acids can be helpful to people working on muscle building. When supplementing with BCAAs, it is necessary to take them together, about 30 to 60 minutes before a workout.", opts:["True","False"], correct:0, explain:"This matches the program's stated BCAA timing recommendation."},
+  {q:"A primarily vegetarian diet is generally helpful in preventing cancer.", opts:["True","False"], correct:0, explain:"This matches the program's stated position connecting vegetarian diets with cancer prevention."}
+];
+
 const u11Quiz = makeQuizController('quizShell11', 'perf11', '11-quiz');
-u11Quiz.pool = practiceTestQuiz11Pool;
+u11Quiz.pool = officialQuiz11Pool;
 startQuiz(u11Quiz);
+
+/* ---------------- Unit 12 official quiz (Lesson 12 Test, 30Q) ---------------- */
+const officialQuiz12Pool = [
+  {q:"Which of the following are factors contributing to fatigue?", opts:["Allergies","Poor digestion","Toxicity from the colon","Hypoglycemia","All of the above"], correct:4, explain:"Allergies, poor digestion, colon toxicity, and hypoglycemia are all named contributing factors to fatigue."},
+  {q:"Which of the following are common underlying problems associated with fatigue?", opts:["Low thyroid (hypothyroidism)","Adrenal gland function","Candida","A and B","All of the above"], correct:4, explain:"Low thyroid function, adrenal function, and Candida are all named underlying fatigue problems."},
+  {q:"Which of the following is the most appropriate diet for people with fatigue?", opts:["High in easily digested complex carbohydrates and adequate amounts of protein foods, along with at least 2 quarts of filtered, good-quality water daily","High in protein and adequate amounts of easily digested complex carbohydrates, along with at least 2 quarts of filtered, good-quality water daily","High in easily digested complex carbohydrates and adequate amounts of fats and protein foods, with at least 2 quarts of filtered, good-quality water daily","None of the above"], correct:0, explain:"Complex carbohydrates as the primary focus, with adequate (not excessive) protein and plenty of water, is the tested fatigue-diet approach."},
+  {q:"A deficiency of which mineral is a common cause of low energy, as it supports proper cell respiration and energy production?", opts:["Iron","Chromium","Potassium","Magnesium","C and D"], correct:3, explain:"Magnesium is specifically tied to cell respiration and energy production as a cofactor in ATP-related enzyme reactions.", flag:true},
+  {q:"Which nutrient is needed for normal thyroid function, which supports proper metabolism and energy production?", opts:["CoQ10","Zinc","Iron","Iodine"], correct:3, explain:"Iodine is essential for thyroid hormone synthesis, supporting metabolism and energy."},
+  {q:"Which amino acid has been shown to improve energy and endurance with supplementation of 500 to 750 mg twice daily, as it is important to fatty acid metabolism and the efficient use of the fats in the cells?", opts:["L-carnitine","L-tryptophan","Tyrosine","Glutamine"], correct:0, explain:"L-carnitine shuttles fatty acids into mitochondria for energy production, matching this description and dosing."},
+  {q:"A multifaceted approach to treating chronic fatigue and fibromyalgia would not include:", opts:["Herbal treatment with ginseng, ginger, turmeric, and gingko","Avoidance of sugar, refined flour, caffeine, and alcohol","Nutritional therapies with magnesium especially B12, other B vitamins and amino acids","Treating chronic infections of the bladder, vagina, prostate, and sinuses","Weekly juice fasting to relieve digestive problems contributing to fatigue"], correct:4, explain:"Weekly juice fasting isn't part of a sound multifaceted CFS/fibromyalgia approach — someone already fatigued and nutritionally taxed generally needs more consistent nourishment, not regular fasting.", flag:true},
+  {q:"Which of the following statements concerning viral infections is FALSE?", opts:["The primary way we heal from viruses is through the immune response, by means of lymphocyte attack functions and through the formation of specific antiviral antibodies","Acute infectious hepatitis A is associated with fatigue and a yellowing of the skin and eyes and possibly an initial period of dark urine and white- or gray-coloured stools","Cell membrance integrity is essential in preventing the beginnings of a viral infection and is supported mainly by vitamins C, E, and A and EFAs","Antibody responses can take anywhere from 2 to 4 days to reach adequate levels to counter the millions of viral organisms","Hepatitis B and C come from blood contact, although there may be some possible exposure with sexual activity"], correct:3, explain:"A primary antibody response typically takes longer than 2-4 days to reach significant levels — this timeframe understates how long adequate antibody levels actually take to develop.", flag:true},
+  {q:"Which nutrient is useful in acute viral infections, especially with vitamin A, as the two enhance each other's effects in providing immune support?", opts:["Vitamin D","Zinc","Magnesium","None of the above"], correct:1, explain:"Zinc and vitamin A are described as enhancing each other's immune-supportive effects in acute viral infections."},
+  {q:"Which herb can be used during the initial phases of infections as a mild \"antibiotic\" in lieu of using pharmaceutical antibiotics?", opts:["Propolis","Echinacea","Garlic","Myrrh","A and D"], correct:1, explain:"Echinacea is the herb most classically associated with this mild-antibiotic-alternative role during early infection.", flag:true},
+  {q:"Which of the following is the rate at which the body burns calories to maintain its functions at rest, and is affected by gender, age, diet activity level, thyroid function, amount of sleep, amount of body fat, body temperature, weight, and likely by genetics?", opts:["BMI","Set-point","BMR","Fat–cell"], correct:2, explain:"BMR (Basal Metabolic Rate) is the rate of calorie burning at rest, affected by all these individual factors."},
+  {q:"Behaviour patterns for optimum weight does NOT include which of the following?", opts:["Rotating foods","Eating most foods early in the day for best use of calories","Focusing on what you are eating and not what you are avoiding","Weighing yourself daily to ensure you are staying on track"], correct:3, explain:"Daily weighing is not one of the recommended behaviour patterns — it can create anxiety rather than support sustainable habits."},
+  {q:"Which of the following statements concerning weight loss is FALSE?", opts:["During periods of weight loss, the body is breaking down more tissue that needs recycling or elimination. Toxins that have been stored in fat tissue can also be released in greater amounts during this time","During weight loss, amounts over the DRIs are needed for iron, zinc, copper, manganese, and molybdenum","To handle the extra toxin load, it is suggested to take in the morning 1 to 3 grams daily in 2 or 3 portions of vitamin C, together with vitamin E and selenium","Lemon water taken 15 to 30 minutes before meals can help digestion and utilization of fats","Avoid peppermint leaf tea as it stimulates the appetite by exciting the stomach nerves"], correct:4, explain:"Peppermint is generally associated with calming digestion and reducing appetite, not stimulating it — this reversal makes it the false statement.", flag:true},
+  {q:"Which condition is associated with weight loss or the inability to gain weight and is associated with many other symptoms, such as rapid heart rate, sweaty palms, and insomnia?", opts:["Hyperthyroidism","Yeast syndrome","Anorexia","None of the above"], correct:0, explain:"These are classic hyperthyroidism symptoms."},
+  {q:"Which of the following are common to patients with yeast syndrome?", opts:["Cravings for (and overeating of) sweets, breads, or alcohol","Sensitivity (and exposures) to molds, dampness, and certain smells","Mental symptoms, such as depression, mood swings, or confusion","Chronic fatigue, indigestion, or food reactions","All of the above"], correct:4, explain:"All of these are named as common features of yeast syndrome (Candida)."},
+  {q:"Which of the following is part of a three-faceted approach to treating yeast syndrome?", opts:["Eat foods that do not allow the yeast to thrive and divide, such as poultry, fish, nuts, seeds, and occasional eggs","Diminish the amount of yeast present. Fresh garlic, caprylic acid, or oregano oil can help with this","Replenish the colon with friendly bacteria","A and B only","All of the above"], correct:4, explain:"The three facets are: starve the yeast, diminish it directly, and replenish beneficial bacteria — all three together."},
+  {q:"Which foods have been identified as possibly triggering an allergic reaction in the form of migraine headaches?", opts:["Alcoholic beverages, chocolate, eggs, and cheese","Chocolate, strawberries, tomatoes, and eggs","Corn, wheat, milk, and alcoholic beverages","Eggs, sulfites, citrus fruits, and peanuts"], correct:0, explain:"Alcohol, chocolate, eggs, and cheese are the classic migraine-trigger grouping tested here.", flag:true},
+  {q:"What is the best type of practical testing for food allergies?", opts:["RAST","NAET","Elimination diet","All of the above"], correct:2, explain:"An elimination diet — removing and systematically reintroducing suspected foods — is considered the most practical testing approach."},
+  {q:"Which of the following statements about PMS is FALSE?", opts:["PMS is aggravated by low blood sugar generated by stress and an intake of refined flour and sugar products","Low progesterone levels seem to be the main factor in PMS symptoms","Supplementing magnesium at amounts equal to up to 1.5 times the calcium level is helpful in reducing some PMS symptoms","Anxiety symptoms, such as mood swings and irritability, often respond to extra B vitamins, particularly thiamin and pyridoxine","None of the statements are false"], correct:4, explain:"All four PMS statements reflect this course's own teaching — none of them are false.", flag:true},
+  {q:"Which of the following would be a good recommendation for pre/post surgery?", opts:["Initiate a detoxification two or three months post-surgery, especially if general anesthesia was used during surgery","Avoid congestive foods","Vitamins A and C, and Zinc can speed up healing time","A and C","All of the above"], correct:4, explain:"Allowing the body to stabilize before a deeper detox program, avoiding congestive foods, and using A/C/zinc for healing are all reasonable pre/post-surgery recommendations together.", flag:true},
+  {q:"People with chronic fatigue syndrome (CFS) can increase energy levels by engaging in regular vigorous exercise.", opts:["True","False"], correct:1, explain:"CFS is associated with post-exertional malaise, where vigorous exercise tends to worsen rather than improve symptoms."},
+  {q:"Fasting one day a week on water or juices can be a valuable tool for many people wanting to lose or maintain weight, in that it re-emphasizes the importance of food choices and food awareness.", opts:["True","False"], correct:0, explain:"This matches the course's stated framing of weekly fasting as a tool for food awareness in weight management."},
+  {q:"If taking higher amounts of zinc to help an acute viral infection, it is important to take extra copper and manganese and possibly iron for several weeks afterwards.", opts:["True","False"], correct:0, explain:"High-dose zinc can compete with copper and manganese absorption, so replenishing them afterward is recommended."},
+  {q:"Symptoms of disease are not the real problem, rather they are a result of people's lives - what they eat, do, and feel and their deeper issues, attitudes, beliefs, and emotions.", opts:["True","False"], correct:0, explain:"This matches the course's holistic framing of symptoms as downstream of lifestyle and deeper issues."},
+  {q:"The keys for treating acute viral conditions are rest, fluids, and extra vitamin A, beta carotene, vitamin C, and zinc.", opts:["True","False"], correct:0, explain:"This matches the course's stated acute-viral-support protocol."},
+  {q:"Juice fasting is recommended for those with chronic viral infections.", opts:["True","False"], correct:1, explain:"Chronic viral infections generally call for sustained nutritional support rather than fasting, which could be counterproductive for someone managing an ongoing illness.", flag:true},
+  {q:"Vitamin C is used so rapidly by a sick and healing body that it is needed almost every hour.", opts:["True","False"], correct:0, explain:"This matches the course's stated high-frequency vitamin C guidance during acute illness."},
+  {q:"50-75% of people who lose weight on fad diets regain their lost weight and sometimes even more", opts:["True","False"], correct:0, explain:"This matches well-known statistics on weight regain after fad dieting."},
+  {q:"Hyperactivity can be helped with a good diet and nutritional supplement program.", opts:["True","False"], correct:0, explain:"This matches the course's stated position on diet/supplement support for hyperactivity."},
+  {q:"Depression can often be helped naturally through the elimination of chemicals, sugar, caffeine, tobacco, alcohol, and refined foods in addition to regular, moderate exercise.", opts:["True","False"], correct:0, explain:"This matches the course's lifestyle-based approach to supporting mood naturally."}
+];
+
+const u12Quiz = makeQuizController('quizShell12', 'cond12', '12-quiz');
+u12Quiz.pool = officialQuiz12Pool;
+startQuiz(u12Quiz);
+
+/* ---------------- Unit 13 official quiz (Lesson 13 Test, 30Q) ---------------- */
+const officialQuiz13Pool = [
+  {q:"Which of the following problems is associated with sugar intake?", opts:["Yeast overgrowth","Alcoholism","Anxiety","Depression","All of the above"], correct:4, explain:"Sugar intake is linked to all of these: yeast overgrowth, alcoholism, anxiety, and depression."},
+  {q:"Sweat and sebaceous glands and tears are part of which of the following general detoxification systems?", opts:["Skin and dermal","Lymph","Urinary","Respiratory","None of the above"], correct:0, explain:"Sweat glands, sebaceous glands, and tears are grouped under the skin/dermal detoxification system."},
+  {q:"Which of the following describes how we acquire toxins from our environment?", opts:["Breathing them","Ingesting them","Contacting them physically","A and B","All of the above"], correct:4, explain:"Breathing, ingesting, and physical contact are all named routes of toxin exposure."},
+  {q:"Which of the following statements about detoxification and cleansing is FALSE?", opts:["The proper elimination of toxins is essential to health","The liver helps transform many toxic substances into harmless agents","Who needs to detoxify and when is based in part on individual lifestyle and needs","Detoxification therapy – particularly fasting and juice cleansing - is a relatively new and beneficial way to treat many common health complaints","At least a 1 to 2 week detox program is suggested in the spring and autumn"], correct:3, explain:"Fasting and cleansing practices are actually ancient, used across cultures for centuries — describing them as \"relatively new\" is the false statement."},
+  {q:"Which of the following are potential symptoms of a sugar detox?", opts:["Fatigue","Anxiety","Irritability","Palpitations","All of the above"], correct:4, explain:"Fatigue, anxiety, irritability, and palpitations are all named sugar-detox symptoms."},
+  {q:"Which of the following cleansing herbs is a blood purifier and increases fluid elimination and sweat?", opts:["Garlic","Prickly ash bark","Cayenne pepper","Ginger"], correct:2, explain:"Cayenne pepper is classically described as a blood purifier that increases sweat and fluid elimination.", flag:true},
+  {q:"Which of the following is considered the most important detoxification organ?", opts:["Kidney","Liver","Colon","Skin"], correct:1, explain:"The liver is the most important detoxification organ, transforming toxic substances into harmless agents."},
+  {q:"Which of the following is not a negative effect of caffeine?", opts:["General anxiety","Increased heartburn","Increased absorption of iron and calcium","Mild arrhythmias, tachycardia, and palpitations","Kidney stones"], correct:2, explain:"Caffeine does not increase mineral absorption — if anything it can interfere with calcium absorption — making this the one that isn't a real negative effect."},
+  {q:"How much caffeine is in a 6-oz cup of percolated coffee?", opts:["50 to 100 mg","60 to 120 mg","70 to 80 mg","80 to 110 mg"], correct:1, explain:"60-120mg is the closest tested range for caffeine content in a 6oz cup of percolated coffee.", flag:true},
+  {q:"Which of the following foods help heal anemia, the liver, the intestines, and breath?", opts:["Wheatgrass","Spinach","Lemon","Parsley"], correct:3, explain:"Parsley is specifically noted for supporting breath freshness alongside these other benefits.", flag:true},
+  {q:"Which of the following would be considered a benefit of fasting?", opts:["Reduction of allergies","Creativity","Better sleep","Antiaging effects","All of the above"], correct:4, explain:"Reduced allergies, creativity, better sleep, and anti-aging effects are all named benefits of fasting."},
+  {q:"Juices most helpful in weight loss include:", opts:["Grapefruit, lemon, cucumber, and greens","Grapefruit, oranges, carrots, and greens","Oranges, lemon, cucumber, and greens","None of the above"], correct:0, explain:"Grapefruit, lemon, cucumber, and greens — the lower-sugar grouping — is tested as most helpful for weight loss."},
+  {q:"Which of the following statements regarding the risks of alcohol is FALSE?", opts:["Alcohol increases levels of the liver enzyme that breaks down estrogen","Alcohol intake and abuse is damaging to the heart and blood vessels and leads to cardiovascular diseases and dysfunctions","Carbohydrate metabolism is affected by alcohol and can lead to hypoglycemia and diabetes","Slows fat metabolism resulting in fat building up in the liver"], correct:0, explain:"Alcohol actually impairs (decreases) the liver's ability to break down estrogen, rather than increasing it — making this the false statement."},
+  {q:"Nutrients that can help reduce sugar cravings are:", opts:["B vitamins","L-glutamine","Zinc","Chromium","All of the above"], correct:4, explain:"B vitamins, L-glutamine, zinc, and chromium are all named as helpful for reducing sugar cravings."},
+  {q:"During detoxification, more toxins are released into the body. Greater intake of which of the following will provide protection against those toxins?", opts:["Water","Fibre","Antioxidants","A and C","All of the above"], correct:4, explain:"Water, fibre, and antioxidants are all named as protective during increased toxin release."},
+  {q:"Which of the following does NOT add to increased toxicity?", opts:["Poor digestion","Reduced liver function","Poor elimination through the kidneys","Excessive sweating"], correct:3, explain:"Excessive sweating is an elimination pathway that removes toxins, rather than a cause of increased toxicity."},
+  {q:"What is a toxin?", opts:["Any substance that creates irritating and/or harmful effects in the body","Any substance that undermines the body's health","Any substance that stresses the biochemical or organ functions","Any substance that actually damages tissues and organs","All of the above"], correct:4, explain:"A toxin spans this whole spectrum, from irritation to genuine organ damage."},
+  {q:"Which of the following could be considered the most important detoxifier?", opts:["Fibre","Water","Vegetables","Antioxidants"], correct:1, explain:"Water underlies virtually every elimination pathway the body has, making it the most important single detoxifier."},
+  {q:"Which of the following herbs are useful in detoxification as a laxative?", opts:["Yellow dock, rhubarb root, and ginger root","Dandilion, horsetail, and licorice","Goldenseal, peppermint, and rhubarb root","Senna leaf, licorice, and dandelion"], correct:3, explain:"Senna leaf is the classic herbal laxative, grouped here with licorice and dandelion."},
+  {q:"Toxicity is of much greater concern now than ever before.", opts:["True","False"], correct:0, explain:"This matches the course's stated position on modern toxicity concerns."},
+  {q:"Breaking a fast must be well planned and executed slowly and carefully to prevent the creation of symptoms and sickness.", opts:["True","False"], correct:0, explain:"This matches standard fasting guidance about carefully breaking a fast."},
+  {q:"It is recommended to take natural supplements during a fast.", opts:["True","False"], correct:1, explain:"The purpose of a fast is largely to give the digestive system a rest — heavy supplementation during the fast itself runs counter to that goal.", flag:true},
+  {q:"When fasting, the first two days are generally the most challenging.", opts:["True","False"], correct:0, explain:"This matches common fasting experience, where initial symptoms are often hardest before adaptation."},
+  {q:"Regular exercise is important during a cleanse, as it stimulates sweating and encourages elimination through the skin.", opts:["True","False"], correct:0, explain:"This matches the course's stated connection between exercise and detox via sweating."},
+  {q:"An acidic diet causes more nicotine cravings than an alkaline diet.", opts:["True","False"], correct:0, explain:"Urine pH affects nicotine excretion rate — a more acidic state increases nicotine excretion, which can increase cravings for more nicotine to compensate."},
+  {q:"People who over-consume protein seem to crave sugar and carbohydrate-rich foods.", opts:["True","False"], correct:0, explain:"This matches the course's stated observation connecting high-protein intake with carbohydrate cravings."},
+  {q:"Many of the poisons (toxins) that we ingest or make are stored in the fatty tissues.", opts:["True","False"], correct:0, explain:"Lipophilic (fat-soluble) toxins are well known to accumulate in fatty tissue."},
+  {q:"\"Homeostasis\" is a term that means the body functions are out of balance.", opts:["True","False"], correct:1, explain:"Homeostasis actually means internal balance/stability — the opposite of this definition."},
+  {q:"Internally, the body produces toxins through its normal everyday functions.", opts:["True","False"], correct:0, explain:"Normal metabolism produces waste products/toxins as part of everyday bodily function."},
+  {q:"Arthritis, allergies, obesity, many skin problems, fatigue, pains, coughs, immune weakness, and headaches can all be related to toxicity.", opts:["True","False"], correct:0, explain:"This matches the course's broad framing connecting many common complaints to underlying toxicity."}
+];
+
+const u13Quiz = makeQuizController('quizShell13', 'detox13', '13-quiz');
+u13Quiz.pool = officialQuiz13Pool;
+startQuiz(u13Quiz);
 
 /* ============================================================= */
 /* FINAL EXAM — combines every official/practice pool built so far */
@@ -5769,7 +6305,9 @@ const finalExamPoolAll = [
   ...tagUnit(officialQuiz7Pool, '7'),
   ...tagUnit(officialQuiz8Pool, '8'),
   ...tagUnit(officialQuiz9Pool, '9'),
-  ...tagUnit(practiceTestQuiz11Pool, '11')
+  ...tagUnit(officialQuiz11Pool, '11'),
+  ...tagUnit(officialQuiz12Pool, '12'),
+  ...tagUnit(officialQuiz13Pool, '13')
 ];
 document.getElementById('finalPoolSize').textContent = finalExamPoolAll.length;
 
